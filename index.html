@@ -1,1539 +1,430 @@
-
 <!DOCTYPE html>
-<html lang="en-us"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<link rel="alternate" hreflang="en-us" href="http://wwww.michelemerler.com">
-<meta name="theme-color" content="#0095eb">
-<link rel="stylesheet" href="./css/github.min.css">
-<link rel="stylesheet" href="./css/bootstrap.min.css">
-<link rel="stylesheet" href="./css/academicons.min.css">
-<link rel="stylesheet" href="./css/font-awesome.min.css">
-<link rel="stylesheet" href="./css/jquery.fancybox.min.css">
-<link rel="stylesheet" href="./css/css"> 
-<link rel="stylesheet" href="./css/mm.css">
-<link rel="stylesheet" type="text/css" href="./css/hexagons.css">
-  
-<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML'></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
-
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-});
-</script>
-<script>
-      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-      ga('create', 'UA-54472398-1', 'auto');
-      ga('require', 'eventTracker');
-      ga('require', 'outboundLinkTracker');
-      ga('require', 'urlChangeTracker');
-      ga('send', 'pageview');
-</script>
-<script src="js/jssor.slider-27.1.0.min.js" type="text/javascript"></script>
-    <script type="text/javascript">
-        jssor_1_slider_init = function() {
-
-            var jssor_1_SlideoTransitions = [
-              [{b:0,d:600,y:-290,e:{y:27}}],
-              [{b:0,d:1000,y:185},{b:1000,d:500,o:-1},{b:1500,d:500,o:1},{b:2000,d:1500,r:360},{b:3500,d:1000,rX:30},{b:4500,d:500,rX:-30},{b:5000,d:1000,rY:30},{b:6000,d:500,rY:-30},{b:6500,d:500,sX:1},{b:7000,d:500,sX:-1},{b:7500,d:500,sY:1},{b:8000,d:500,sY:-1},{b:8500,d:500,kX:30},{b:9000,d:500,kX:-30},{b:9500,d:500,kY:30},{b:10000,d:500,kY:-30},{b:10500,d:500,c:{x:125.00,t:-125.00}},{b:11000,d:500,c:{x:-125.00,t:125.00}}],
-              [{b:0,d:600,x:535,e:{x:27}}],
-              [{b:-1,d:1,o:-1},{b:0,d:600,o:1,e:{o:5}}],
-              [{b:-1,d:1,c:{x:250.0,t:-250.0}},{b:0,d:800,c:{x:-250.0,t:250.0},e:{c:{x:7,t:7}}}],
-              [{b:-1,d:1,o:-1},{b:0,d:600,x:-570,o:1,e:{x:6}}],
-              [{b:-1,d:1,o:-1,r:-180},{b:0,d:800,o:1,r:180,e:{r:7}}],
-              [{b:0,d:1000,y:80,e:{y:24}},{b:1000,d:1100,x:570,y:170,o:-1,r:30,sX:9,sY:9,e:{x:2,y:6,r:1,sX:5,sY:5}}],
-              [{b:2000,d:600,rY:30}],
-              [{b:0,d:500,x:-105},{b:500,d:500,x:230},{b:1000,d:500,y:-120},{b:1500,d:500,x:-70,y:120},{b:2600,d:500,y:-80},{b:3100,d:900,y:160,e:{y:24}}],
-              [{b:0,d:1000,o:-0.4,rX:2,rY:1},{b:1000,d:1000,rY:1},{b:2000,d:1000,rX:-1},{b:3000,d:1000,rY:-1},{b:4000,d:1000,o:0.4,rX:-1,rY:-1}]
-            ];
-
-            var jssor_1_options = {
-              $AutoPlay: 2,
-              $Idle: 2000,
-              $CaptionSliderOptions: {
-                $Class: $JssorCaptionSlideo$,
-                $Transitions: jssor_1_SlideoTransitions,
-                $Breaks: [
-                  [{d:2000,b:1000}]
-                ]
-              },
-              $ArrowNavigatorOptions: {
-                $Class: $JssorArrowNavigator$
-              },
-              $BulletNavigatorOptions: {
-                $Class: $JssorBulletNavigator$
-              }
-            };
-
-            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
-
-            /*#region responsive code begin*/
-
-            var MAX_WIDTH = 900;
-
-            function ScaleSlider() {
-                var containerElement = jssor_1_slider.$Elmt.parentNode;
-                var containerWidth = containerElement.clientWidth;
-
-                if (containerWidth) {
-
-                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
-
-                    jssor_1_slider.$ScaleWidth(expectedWidth);
-                }
-                else {
-                    window.setTimeout(ScaleSlider, 30);
-                }
-            }
-
-            ScaleSlider();
-
-            $Jssor$.$AddEvent(window, "load", ScaleSlider);
-            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
-            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
-            /*#endregion responsive code end*/
-        };
-    </script>
- <style>
-        /*jssor slider loading skin spin css*/
-        .jssorl-009-spin img {
-            animation-name: jssorl-009-spin;
-            animation-duration: 2.6s;
-            animation-iteration-count: infinite;
-            animation-timing-function: linear;
-        }
-
-        @keyframes jssorl-009-spin {
-            from { transform: rotate(0deg); }
-            to { transform: rotate(360deg); }
-        }
-
-        /*jssor slider bullet skin 052 css*/
-        .jssorb052 .i {position:absolute;cursor:pointer;}
-        .jssorb052 .i .b {fill:#000;fill-opacity:0.3;}
-        .jssorb052 .i:hover .b {fill-opacity:.7;}
-        .jssorb052 .iav .b {fill-opacity: 1;}
-        .jssorb052 .i.idn {opacity:.3;}
-
-        /*jssor slider arrow skin 053 css*/
-        .jssora053 {display:block;position:absolute;cursor:pointer;}
-        .jssora053 .a {fill:none;stroke:#fff;stroke-width:640;stroke-miterlimit:10;}
-        .jssora053:hover {opacity:.8;}
-        .jssora053.jssora053dn {opacity:.5;}
-        .jssora053.jssora053ds {opacity:.3;pointer-events:none;}
-    </style>
-<link rel="icon" type="image/png" href="./images/mm3.png">
-<link rel="apple-touch-icon" type="image/png" href="./images/mm3.png">
-<link rel="canonical" href="http://www.michelemerler.com">
-
-<meta property="twitter:card" content="summary_large_image">
-<meta property="og:site_name" content="Michele Merler">
-<meta property="og:url" content="http://www.michelemerler.com">
-<meta property="og:title" content="Michele Merler">
-<meta property="og:description" content="Researcher">
-<meta property="og:locale" content="en-us">
-  
-<meta property="og:updated_time" content="2017-12-07T00:00:00+00:00">
-
-<title>Michele Merler</title>
-
-</head>
-
-<body onload="myFunction()" id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71" class=""><div id="MathJax_Message" style="display: none;"></div>
-
-<nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
-  <div class="container">
-
-    
-    <div class="navbar-header">
-      
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      
-      <a class="navbar-brand" href="http://www.michelemerler.com">Michele Merler</a>
-    </div>
-
-    
-    <div class="collapse navbar-collapse">
-    <ul class="nav navbar-nav navbar-right">
-
-        <li class="nav-item active">
-          <a href="http://www.michelemerler.com/#about" data-target="#about">
-            
-            <span>About</span>
-            
-          </a>
-        </li>
-
-        <li class="nav-item">
-          <a href="http://www.michelemerler.com/#research" data-target="#research">
-            
-            <span>Research </span>
-            
-          </a>
-        </li>
-
-        <li class="nav-item">
-          <a href="www.michelemerler.com/#publications" data-target="#publications">
-            
-            <span>Publications</span>
-            
-          </a>
-        </li>
-        
-        <li class="nav-item">
-          <a href="http://www.michelemerler.com/#awards" data-target="#awards">
-            
-            <span>Honors</span>
-            
-          </a>
-        </li>  
-        
-
-        <li class="nav-item">
-          <a href="http://www.michelemerler.com/#professional" data-target="#professional">
-            
-            <span>Service</span>
-            
-          </a>
-        </li>
-		
-		<li class="nav-item">
-          <a href="./papers/MicheleMerlerCV.pdf" target="_blank">
-            
-            <span>CV</span>
-            
-          </a>
-        </li>
-
-        <li class="nav-item">
-          <a href="http://www.michelemerler.com/#personal" data-target="#personal">
-            
-            <span>Personal</span>
-            
-          </a>
-        </li>
-      
-      </ul>
-
-    </div>
-  </div>
-</nav>
-
-<br>
-<br>
-
-
-<span id="homepage" style="display: none"></span>
-  
-  <div>
-  <ul id="hexGrid">
-    
-      <li class="hex">
-        <div class="hexIn">
-          <a class="hexLink" href="#about">
-            <img src="./images/deepartio.png" alt="" />
-            <mx1>About</mx1>
-            <p>A brief description</p>
-          </a>
-        </div>
-      </li>
-      <li class="hex">
-        <div class="hexIn">
-          <a class="hexLink" href="#news">
-            <img src="./images/multimedia.png" alt="" />
-            <mx1>News</mx1>
-            <p>What's happened recently</p>
-          </a>
-        </div>
-      </li>
-      <li class="hex">
-        <div class="hexIn">
-          <a class="hexLink" href="#research">
-            <img src="./images/accepted.jpg" alt="" />
-            <mx1>Research</mx1>
-            <p>Interesting projects I'm involved in</p>
-          </a>
-        </div>
-      </li>
-      <li class="hex">
-        <div class="hexIn">
-          <a class="hexLink" href="#publications">
-            <img src="./images/leo.jpg" alt="" />
-            <mx1>Publications</mx1>
-            <p>A selected list of recent publications</p>
-          </a>
-        </div>
-      </li>
-      <li class="hex">
-        <div class="hexIn">
-          <a class="hexLink" href="#awards">
-            <img src="./images/award.jpg" alt="" />
-            <mx1>Honors</mx1>
-            <p>Some awards for my research</p>
-          </a>
-        </div>
-      </li>
-      <li class="hex">
-        <div class="hexIn">
-          <a class="hexLink" href="#professional">
-            <img src="./images/organize.jpg" alt="" />
-            <mx1>Service</mx1>
-            <p>My involvement in conferences and journals</p>
-          </a>
-        </div>
-      </li>
-      <li class="hex">
-        <div class="hexIn">
-          <a class="hexLink" href="#personal">
-            <img src="./images/right_brain_left_brain.jpg" alt="" />
-            <mx1>Personal</mx1>
-            <p>What I do when I'm not in the lab</p>
-          </a>
-        </div>
-      </li>
-    
-  </ul>
-  </div>
-  
-
- 
-  
-  <section id="about" class="home-section">
-    <div class="container">
-      
- <br>
-  <br>
-	  
-	  
-
-<div class="row">
-  <div class="col-xs-12 col-md-3">
-    <div id="profile">
-
-      
-      <div class="portrait" style="background-image: url(./images/IMG_3023.jpg);">
-	  <meta itemprop="image" content="./images/IMG_3023.jpg">
-      </div>
-      
-
-      <div class="portrait-title">
-        <h2 itemprop="name">Michele Merler</h2>
-        <h3 itemprop="jobTitle">Research Staff Member</h3>
-        
-        <h3 itemprop="worksFor">
-          
-          IBM Research AI
-          
-        </h3>
-		<h3><small>michele dot merler at gmail dot com</small></h3>
-        
-      </div>
-
-      <ul class="social-icon" aria-hidden="true">
-        
-        
-        <li>
-          <a href="https://scholar.google.com/citations?user=y7c1GdAAAAAJ&hl=en" target="_blank">
-            <i class="ai ai-google-scholar big-icon"></i>
-          </a>
-        </li>
-        
-        
-        <!--li>
-          <a href="https://github.com/mmerler" target="_blank">
-            <i class="fa fa-github big-icon"></i>
-          </a>
-        </li-->
-		
-		<li>
-          <a href="https://twitter.com/MultiMichele" target="_blank">
-            <i class="fa fa-twitter big-icon"></i>
-          </a>
-        </li>
-        
-        
-        <li>
-          <a href="https://www.linkedin.com/in/michele-merler-0605677" target="_blank">
-            <i class="fa fa-linkedin big-icon"></i>
-          </a>
-        </li>
-        
- 
-        
-      </ul>
-    </div>
-  </div>
-
-  <div class="col-xs-12 col-md-9" itemprop="description">
-
-    <p>Ciao! I am a Research Staff Member in the Vision and Multimedia Group under <a href="https://www.research.ibm.com/artificial-intelligence/computer-vision/" target="_blank">IBM Research AI</a>. Since 2012 I have been at the T. J. Watson Research Lab in New York. Before that, I did my PhD at Columbia University with Professor <a href="http://www.cs.columbia.edu/~jrk/" target="_blank">John Kender </a>. My interests are in Multimedia and Computer Vision, with a focus on sports video analysis and facial attributes estimation.
-I have publications in several peer-reviewed journals and conferences, including IEEE TMM, CVPR, ACM Multimedia, ICMR, MICCAI, etc. Among other professional activities, I have served as Area Chair for ACM Multimedia in 2016 and 2017, and local organization chair and web chair for <a href="http://www.icmr2016.org/" target="_blank">ICMR in 2016</a>. You can look at my CV <a href="./papers/MicheleMerlerCV.pdf" target="_blank">here</a>.
-</p>
-<br>
-<div class="row">
-
-      
-      <div class="col-sm-5">
-        <h3>Interests</h3>
-        <ul class="ul-interests" style="list-style: none;">
-          
-          <li>Computer Vision</li>
-          
-          <li>Multimedia Retrieval</li>
-          
-          <li>Deep (and shallow) Learning</li>
-          
-        </ul>
-      </div>
-      
-
-      
-      <div class="col-sm-7">
-        <h3>Education</h3>
-        <ul class="ul-edu fa-ul">
-          
-          <li>
-            <i class="fa-li fa fa-graduation-cap"></i>
-            <div class="description">
-              <p class="course">PhD in Computer Science, 2013</p>
-              <p class="institution">Columbia University</p>
-            </div>
-          </li>
-          
-          <li>
-            <i class="fa-li fa fa-graduation-cap"></i>
-            <div class="description">
-              <p class="course">MS in Computer Science, 2008</p>
-              <p class="institution">Columbia University</p>
-            </div>
-          </li>
-          
-          <li>
-            <i class="fa-li fa fa-graduation-cap"></i>
-            <div class="description">
-              <p class="course">MEng in Telecommunications Engineering, 2007</p>
-              <p class="institution">University of Trento, Italy</p>
-            </div>
-          </li>
-          
-        </ul>
-      </div>
-      
-
-    </div>
-
-
-    <div id="news" class="panel panel-primary" style="vertical-align:middle; margin-top:20px; border-color:#85C1E9; border-width:1px">
-      <div class="panel-heading" style="color:#313131; background-color:#85C1E9; border-color:#85C1E9; border-width:1px">
-        <h3 class="panel-title" style="font-size:18px;color:white">NEWS</h3>
-      </div>
-      <div style="overflow:auto; height:250px;">
-      <div class="panel-body">
-        <p style="font-size:16px">
-          - 6th Workshop on <a href="http://www.vap.aau.dk/cvsports/"> Computer Vision in Sports (CVSports) </a> @CVPR 2020
-          <br> - Workshop on <a href="https://sites.google.com/view/fair-data-efficient-trusted-cv/"> Fair, Data Efficient and Trusted Computer Vision (FA.DE.TR.CV) </a> @CVPR 2020
-		  <br> - 2nd Workshop on <a href="https://sites.google.com/view/befa-cvpr19"> Bias Estimation in Face Analytics (BEFA) </a> @CVPR 2019
-		  <br> - The Diversity in Faces dataset is out. Check it out <a href="https://www.research.ibm.com/artificial-intelligence/trusted-ai/diversity-in-faces/"> here </a> (Jan 2019)
-		  <br> - AI Self Portrait in the <a href="http://www.aiartonline.com/community/michele-merler-mauro-martino-cicero-nogueira-dos-santos-alfio-gliozzo-john-r-smith/">art gallery</a> of the NIPS Workshop on Machine Learning for Creativity (Dec 2018)
-		  <br> - Our <a href="https://www.ibm.com/blogs/research/2018/10/ai-creativity/">AI Self Portait</a> has been published in the New York Times! (Oct 2018)
-		  <br> - Cognitive Highlights work accepted to IEEE TMM (Sep 2018)
-		  <br> - Cognitive Highlights wins 2018 <a href="https://twitter.com/SportTechAwards/status/992153335661846528" target="_blank">Best Digital Development</a> at the Yahoo Sports Tech Awards for Wimbledon!
-          <br> - Workshop on <a href="https://sites.google.com/site/eccvbefa2018/"> Bias Estimation in Face Analytics (BEFA) </a> @ECCV 2018
-		  <br> - New Face Attributes models <a href="https://www.ibm.com/blogs/bluemix/2018/02/watson-visual-recognition-changes-face-model/" target="_blank"> coming to WDC Visual Recognition</a> mitigating <a href="https://www.ibm.com/blogs/research/2018/02/mitigating-bias-ai-models/" target="_blank">bias</a> (Feb 2018)
-          <br>- Cognitive Highlights @<a href="https://www.nytimes.com/2017/09/05/sports/us-open-highlights.html?mcubz=0" target="_blank">US Open</a>! (Sep 2017)
-          <br>- Presenting Cognitive Highlights (@<a href="https://www.cnet.com/news/ibm-wimbledon-highlights-artificial-intelligence/" target="_blank">Wimbledon</a> July 2017) in the <a href="http://www.vap.aau.dk/cvsports/?page_id=842" target="_blank">CV in Sports Workshop</a> @CVPR 2017
-          <br>- <a href="https://www.ibm.com/blogs/research/2017/05/training-watson-see-whats-plate/" target="_blank">Food recognition</a> model launched in beta in WDC Visual Recognition (May 2017)
-		  <br>- Cognitive Highlights @<a href="http://www.zdnet.com/article/ibm-watson-is-creating-highlight-reels-at-the-masters/" target="_blank">Golf Masters</a>! (Apr 2017)
-          <br>- I am Area Chair for <a href="http://www.acmmm.org/2017/" target="_blank">ACM Multimedia 2017</a> in Multimedia Search and Recommendation track
-          <br>- Presenting our delicious Food analytics papers @<a href="http://www.acmmm.org/2016/" target="_blank">ACM Multimedia 2016</a>
-		  <br>- I am Local Organization Chair and Webmaster for <a href="www.icmr2016.org/" target="_blank">ICMR 2016</a>
-		  <br>- I acted as a Guest Editor for the Neurocomputing <a href="http://www.ee.columbia.edu/~wliu/Neurocom16_SI.pdf" target="_blank">Special Issue on Advanced Learning for Large-Scale Heterogeneous Computing 2016</a> 
-		  <br>- I am Area Chair for <a href="http://www.acmmm.org/2016/" target="_blank">ACM Multimedia 2016</a> in Multimedia Search and Recommendation track
-          <br>- Received the outstanding reviewer award from the <a href="http://www.sigmm.org/archive/ICMR/icmr15/index.html" target="_blank">2015 International Conference on Multimedia Retrieval (ICMR)</a>
-          
-        </p>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-</div>
-
-    </div>
-  </section>
-  
-
-  
-  
-  
-  <section id="research" class="home-section">
-    <div class="container">
-      
-
-
-
-
-<div class="row">
-  <div class="col-xs-12">
-    <h1>Research Projects</h1>
-   
-
-<!--------------------------------------------------------------------------------->
-
-    <div class="pub-list-item" itemscope="" itemtype="http://schema.org/CreativeWork">
-  <div class="panel panel-primary" style="vertical-align:middle; border-color:#1E88E5; border-width:1px; border-style:dotted">
-  <div class="row" style="margin: 5px">
-
-    
-    <div class="col-xs-12 col-md-3">
-      <a href="https://www.research.ibm.com/artificial-intelligence/trusted-ai/diversity-in-faces/">
-        <img src="./images/DiF.jpg" class="pub-banner" itemprop="image">
-      </a>
-    </div>
-    <div class="col-xs-12 col-md-9">
-
-    
-
-      <h3 class="article-title" itemprop="name">
-        <a href="https://www.research.ibm.com/artificial-intelligence/trusted-ai/diversity-in-faces/" itemprop="url">Diversity in Faces</a>
-      </h3>
-
-      <div class="pub-authors" itemprop="author">
-        
-        <i>with</i> Nalini Ratha, Rogerio S Feris, John R Smith
-        
-      </div>
-
-      <div class="pub-publication">
-        
-        <em>2019</em> 
-        
-      </div>
-
-      <div class="pub-links">
-        
-
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://www.research.ibm.com/artificial-intelligence/trusted-ai/diversity-in-faces/">
-  Details
-</a>
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://www.ibm.com/blogs/research/2019/01/diversity-in-faces/" target="_blank">
-Blog Post
-</a>
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://techcrunch.com/2019/01/29/ibm-builds-a-more-diverse-million-face-dataset-to-help-reduce-bias-in-ai/" target="_blank">
-  Techcrunch
-</a>
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://www.cnbc.com/2019/01/29/ibm-releases-diverse-dataset-to-fight-facial-recognition-bias.html" target="_blank">
-  CNBC
-</a>
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://venturebeat.com/2019/01/29/ibm-releases-diversity-in-faces-a-dataset-of-over-1-million-annotations-to-help-reduce-facial-recognition-bias/" target="_blank">
-  Venturebeat
-</a>
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://www.cnet.com/news/ibm-hopes-1-million-diverse-faces-can-reduce-bias-in-ai/" target="_blank">
-  CNET
-</a>
-
-
-
-
-
-      </div>
-
-    </div>
-  </div>
-  </div>
-</div>
-   <!-------------------------------------------------------------------------------------------->   
-    
-    <div class="pub-list-item" itemscope="" itemtype="http://schema.org/CreativeWork">
-  <div class="panel panel-primary" style="vertical-align:middle; border-color:#1E88E5; border-width:1px; border-style:dotted">
-  <div class="row" style="margin: 5px">
-
-    
-    <div class="col-xs-12 col-md-3">
-      <a href="./cognitive_highlights.html">
-        <img src="./images/cognitive_highlights.png" class="pub-banner" itemprop="image">
-      </a>
-    </div>
-    <div class="col-xs-12 col-md-9">
-
-    
-
-      <h3 class="article-title" itemprop="name">
-        <a href="./cognitive_highlights.html" itemprop="url">Cognitive Highlights</a>
-      </h3>
-
-      <div class="pub-authors" itemprop="author">
-        
-        <i>with</i> Dhiraj Joshi, Quoc-Bao Nguyen, Khoi-Nguyen C. Mac, Stephen Hammer, John Kent, John R Smith, Rogerio S Feris
-        
-      </div>
-
-      <div class="pub-publication">
-        
-        <em>2017-2018 @Masters, Wimbledon and US Open</em> 
-        
-      </div>
-
-      <div class="pub-links">
-        
-
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="./cognitive_highlights.html">
-  Details
-</a>
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://www.youtube.com/watch?v=puw05cKplp8" target="_blank">
-  Video 2018 Golf Masters
-</a>
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://www.youtube.com/watch?v=-gRq5rNoWrQ" target="_blank">
-  Video 2017 US Open
-</a>
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://twitter.com/IBMSports/status/851256590816735232" target="_blank">
-  Demo Video Golf Masters
-</a>
-
-<a class="btn btn-primary btn-outline btn-xs" href="http://www.wimbledon.com/en_GB/news/media/1500219429.html" target="_blank">
-  Demo Video Wimbledon
-</a>
-
-<a class="btn btn-primary btn-outline btn-xs" href="http://www.usopen.org/en_US/video/2017-09-10/1505099098.html" target="_blank">
-  Demo Video US Open
-</a>
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://www.nytimes.com/2017/09/05/sports/us-open-highlights.html" target="_blank">
-  New York Times
-</a>
-
-<a class="btn btn-primary btn-outline btn-xs" href="http://fortune.com/2017/09/09/us-open-highlights/" target="_blank">
-  Fortune
-</a>
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://www.nbcnews.com/mach/video/ibm-s-watson-serves-up-this-year-s-u-s-open-highlights-1042571843508" target="_blank">
-  NBC News
-</a>
-
-<a class="btn btn-primary btn-outline btn-xs" href="http://www.zdnet.com/article/ibm-watson-is-creating-highlight-reels-at-the-masters/" target="_blank">
-  ZDNET
-</a>
-<a class="btn btn-primary btn-outline btn-xs" href="https://www.cnet.com/news/ibm-wimbledon-highlights-artificial-intelligence/" target="_blank">
-  CNET
-</a>
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://www.ibm.com/blogs/research/2017/04/ai-technology-auto-curates-2017-masters/" target="_blank">
-  Blog Post 1
-</a>
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://www.ibm.com/blogs/research/2017/06/scaling-wimbledons-video-production-highlight-reels-ai-technology/" target="_blank">
-  Blog Post 2
-</a>
-
-
-
-
-
-      </div>
-
-    </div>
-  </div>
-  </div>
-</div>
-   <!-------------------------------------------------------------------------------------------->
-   
-    <div class="pub-list-item" itemscope="" itemtype="http://schema.org/CreativeWork">
-  <div class="panel panel-primary" style="vertical-align:middle; border-color:#1E88E5; border-width:1px; border-style:dotted">
-  <div class="row" style="margin: 5px">
-
-    
-    <div class="col-xs-12 col-md-3">
-      <a href="./foodvr.html">
-        <img src="./images/foodvr_bg.png" class="pub-banner" itemprop="image">
-      </a>
-    </div>
-    <div class="col-xs-12 col-md-9">
-
-    
-
-      <h3 class="article-title" itemprop="name">
-        <a href="./foodvr.html" itemprop="url">Food Recognition</a>
-      </h3>
-
-      <div class="pub-authors" itemprop="author">
-        
-        <i>with </i> Hui Wu, Rosario Uceda-Sosa, Quoc-Bao Nguyen, John R Smith
-        
-      </div>
-
-      <div class="pub-publication">
-        
-        <em>2016</em> 
-        
-      </div>
-
-      <div class="pub-links">
-        
-
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="./foodvr.html">
-  Details
-</a>
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://www.ibm.com/watson/services/visual-recognition/demo/" target="_blank">
-  Demo
-</a>
-
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="./media/FoodVR.mp4" target="_blank">
-  Research Demo Video 1
-</a>
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="./media/FoodVRdemo.mp4" target="_blank">
-  Research Demo Video 2
-</a>
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://www.ibm.com/blogs/research/2017/05/training-watson-see-whats-plate/" target="_blank">
-  Blog Post
-</a>
-
-
-
-
-
-
-
-
-      </div>
-
-    </div>
-  </div>
-  </div>
-</div>
-    
-    <div class="pub-list-item" itemscope="" itemtype="http://schema.org/CreativeWork">
-  <div class="panel panel-primary" style="vertical-align:middle; border-color:#1E88E5; border-width:1px; border-style:dotted">
-  <div class="row" style="margin: 5px">
-
-    
-    <div class="col-xs-12 col-md-3">
-      <a href="./smv.html">
-        <img src="./images/systemv_wiki3.png" class="pub-banner" itemprop="image">
-      </a>
-    </div>
-    <div class="col-xs-12 col-md-9">
-
-    
-
-      <h3 class="article-title" itemprop="name">
-        <a href="./smv.html" itemprop="url">Semantic Model Vectors for Extracting Insights from Consumer Images and Videos</a>
-      </h3>
-
-      <div class="pub-authors" itemprop="author">
-        
-        <i>with</i> Liangliang Cao, John R Smith, Bert Huang, Lexing Xie, Gang Hua, Apostol Natsev
-        
-      </div>
-
-      <div class="pub-publication">
-        
-        <em>from</em> 2012 
-        
-      </div>
-
-      <div class="pub-links">
-        
-
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="./smv.html">
-  Details
-</a>
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://www.youtube.com/watch?v=FETYt6_QYF4" target="_blank">
-  Concept Video
-</a>
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="http://www1.cs.columbia.edu/~mmerler/SMV.html" target="_blank">
-  SMV for Video Event Recognition Project
-</a>
-
-
-
-
-
-
-
-
-      </div>
-
-    </div>
-  </div>
-  </div>
-</div>
-    
-    
-    
-
-    
-
-  </div>
-</div>
-
-    </div>
-  </section>
-  
-
-  
-  
-  
-  <section id="publications" class="home-section">
-    <div class="container">
-      
-
-
-<div class="row">
-  <div class="col-xs-12">
-    <h1>Selected Publications</h1>
-    
-<h3 id="2019">2019</h3>	
-
-<ul>
-<li><p><small><!--strong--> Michele Merler<!--/strong-->, Nalini Ratha, Rogerio S Feris, John R Smith. <strong> Diversity in Faces </strong>. <em> arXiv (<strong>arXiv</strong>) 2019</em>. 
-<a class="btn btn-primary btn-outline btn-xs" href="https://arxiv.org/abs/1901.10436" target="_blank"> arXiv </a> 
-<a class="btn btn-primary btn-outline btn-xs toggle" href="#dif_arxiv19" > BibTeX</a>
-<a class="btn btn-primary btn-outline btn-xs" href="https://www.research.ibm.com/artificial-intelligence/trusted-ai/diversity-in-faces/">
-  Project
-</a>
-<div class="bibtex" id="dif_arxiv19" style="display:none">  
-					<code><small>
-					@inproceedings{dif_arxiv19,<br>
-			 &nbsp; author = {Michele Merler and Nalini Ratha and Rog{\'{e}}rio S Feris} and John R Smith},<br>
-			 &nbsp; title = {Diversity in Faces},<br>
-             &nbsp; booktitle = {arXiv},<br>
-	         &nbsp; year = {2019}<br>
-			 }</small></code>		
-			</div>
-</small></p></li>
-</ul>	
-	
-<h3 id="2018">2018</h3>
-
-<ul>
-<li><p><small><!--strong--> Michele Merler<!--/strong-->, Dhiraj Joshi, Quoc-Bao Nguyen, Stephen Hammer, John Kent, Jinjun Xiong, Minh N. Do, John R Smith, Rogerio S Feris. <strong>Automatic Curation of Sports Highlights using Multimodal Excitement Features</strong>. <em> IEEE Transactions on MultiMedia (<strong>TMM</strong>) 2018</em>. 
-<a class="btn btn-primary btn-outline btn-xs" href="./papers/sport-highlights-tmm.pdf" target="_blank"> PDF </a> 
-<a class="btn btn-primary btn-outline btn-xs toggle" href="#cognitive_tmm18" > BibTeX</a>
-<a class="btn btn-primary btn-outline btn-xs" href="./cognitive_highlights.html">
-  Project
-</a>
-<div class="bibtex" id="cognitive_tmm18" style="display:none">  
-					<code><small>
-					@inproceedings{Merler_TMM18,<br>
-			 &nbsp; author = {Michele Merler and Dhiraj Joshi and Quoc-Bao Nguyen and Stephen Hammer and John Kent and Jinjun Xiong and Minh N. Do and John R Smith and Rog{\'{e}}rio S Feris},<br>
-			 &nbsp; title = {Automatic Curation of Sports Highlights using Multimodal Excitement Features},<br>
-             &nbsp; booktitle = {{IEEE} Transactions on MultiMedia},<br>
-	         &nbsp; year = {2018}<br>
-			 }</small></code>		
-			</div>
-</small></p></li>
-</ul>	
-    
-<h3 id="2017">2017</h3>
-
-<ul>
-<li><p><small><!--strong--> Michele Merler<!--/strong-->, Dhiraj Joshi, Quoc-Bao Nguyen, Stephen Hammer, John Kent, John R Smith, Rogerio S Feris. <strong>Automatic Curation of Golf Highlights using Multimodal Excitement Features</strong>. <em>3rd Workshop of Computer Vision in Sports @CVPR (<strong>CVPRW</strong>) 2017</em>. 
-<a class="btn btn-primary btn-outline btn-xs" href="http://openaccess.thecvf.com/content_cvpr_2017_workshops/w2/papers/Merler_Auto-Curation_and_Personalization_CVPR_2017_paper.pdf" target="_blank"> PDF </a> 
-<a class="btn btn-primary btn-outline btn-xs toggle" href="#cognitive_cvpr17" > BibTeX</a>
-	<a class="btn btn-primary btn-outline btn-xs" href="./papers/IBM_H5_CVsports17.pdf"> Slides</a>
-<a class="btn btn-primary btn-outline btn-xs" href="./cognitive_highlights.html">
-  Project
-</a>
-<div class="bibtex" id="cognitive_cvpr17" style="display:none">  
-					<code><small>
-					@inproceedings{Merler_CVPRW17,<br>
-			 &nbsp; author = {Michele Merler and Dhiraj Joshi and Quoc-Bao Nguyen and Stephen Hammer and John Kent and John R Smith and Rog{\'{e}}rio S Feris},<br>
-			 &nbsp; title = {Automatic Curation of Golf Highlights Using Multimodal Excitement Features},<br>
-             &nbsp; booktitle = {{IEEE} Conference on Computer Vision and Pattern Recognition  Workshops, {CVPR} Workshops},<br>
-	         &nbsp; year = {2017}<br>
-			 }</small></code>		
-			</div>
-</small></p></li>
-
-<li><p><small> Dhiraj Joshi, <!--strong-->Michele Merler <!--/strong-->, Quoc-Bao Nguyen, Stephen Hammer, John Kent, John R Smith, Rogerio S Feris. <strong>IBM High-Five: Highlights From Intelligent Video Engine</strong>. <em>ACM Multimedia (<strong>MM</strong>) 2017</em>. 
-<a class="btn btn-primary btn-outline btn-xs" href="./papers/p1249-joshi.pdf" target="_blank"> PDF </a> 
-<a class="btn btn-primary btn-outline btn-xs toggle" href="#cognitive_mm17" > BibTeX</a>
-<a class="btn btn-primary btn-outline btn-xs" href="./cognitive_highlights.html"> Project</a>
-<div class="bibtex" id="cognitive_mm17" style="display:none">  
-					<code><small>
-					@inproceedings{Joshi_MM17,<br>
-			 &nbsp; author = {Joshi, Dhiraj and Merler, Michele and Nguyen, Quoc-Bao and Hammer, Stephen and Kent, John and Smith, John R. and Feris, Rogerio S.},<br>
-			 &nbsp; title = {IBM High-Five: Highlights From Intelligent Video Engine},<br>
-             &nbsp; booktitle = {Proceedings of the ACM on Multimedia Conference},<br>
-	         &nbsp; year = {2017}<br>
-			 }</small></code>		
-			</div>
-</small></p></li>
-
-<li><p><small> Xiaolong Wang, Guodong Guo, <!--strong-->Michele Merler<!--/strong-->, Noel CF Codella, MV Rohith, John R Smith, Chandra Kambhamettu. <strong>Leveraging multiple cues for recognizing family photos</strong>. <em>Image and Vision Computing(<strong>IVC</strong>) 2017</em>. 
-<a class="btn btn-primary btn-outline btn-xs" href="./papers/wang_ivc17.pdf" target="_blank"> PDF </a> 
-<a class="btn btn-primary btn-outline btn-xs toggle" href="#family_ivc17" > BibTeX</a>
-<div class="bibtex" id="family_ivc17" style="display:none">  
-					<code><small>
-@article{Wang_IVC17,<br>
- &nbsp; author = {Wang, Xiaolong and Guo, Guodong and Merler, Michele and C. F. Codella, Noel and MV, Rohith and Smith, John R. and Kambhamettu, Chandra},<br>
- &nbsp; title = {Leveraging Multiple Cues for Recognizing Family Photos},<br>
- &nbsp; journal = {Image Vision Computing},<br>
- &nbsp; issue_date = {February 2017},<br>
- &nbsp; volume = {58},<br>
- &nbsp; number = {C},<br>
- &nbsp; year = {2017},<br>
- &nbsp; pages = {61--75}<br>
-}</small></code>		
-			</div>
-</small></p></li>
-</ul>
-
-<h3 id="2016">2016</h3>
-
-<ul>
-<li><p><small><!--strong-->Michele Merler<!--/strong-->, Hui Wu, Rosario Uceda-Sosa, Quoc-Bao Nguyen, John R Smith. <strong>Snap, Eat, RepEat: a food recognition engine for dietary logging</strong>. <em>2nd International Workshop on Multimedia Assisted Dietary Management @ACM Multimedia (<strong>MADIMA</strong>) 2016</em>. 
-<a class="btn btn-primary btn-outline btn-xs" href="./papers/p31-merler.pdf" target="_blank"> PDF </a> 
-<a class="btn btn-primary btn-outline btn-xs toggle" href="#food_madima16" > BibTeX</a>
-<a class="btn btn-primary btn-outline btn-xs" href="./foodvr.html"> Project</a>
-<a class="btn btn-primary btn-outline btn-xs" href="./papers/FoodVR_MADIMA2016.pdf"> Slides</a>
-<a class="btn btn-primary btn-outline btn-xs" href="./papers/FoodVR_MADIMA2016_poster.pdf"> Poster</a>
-<div class="bibtex" id="food_madima16" style="display:none;">
-					<code>
-					@inproceedings{MerlerHUNS16,<br>
-			 &nbsp; author = {Michele Merler and Hui Wu and Rosario Uceda{-}Sosa and Quoc{-}Bao Nguyen and John R Smith},<br>
-			 &nbsp; title = {Snap, eat, repEat: a Food Recognition Engine for Dietary Logging},<br>
-	        &nbsp; booktitle = {2nd International Workshop on Multimedia Assisted Dietary Management (MADIMA), in conjucntion with International Conference on Multimedia, {MM} 2016},<br>
-	        &nbsp; year = {2016}<br>
-			 }</code>		
-			</div>
-			</small></p></li>
-			
-<li><p><small>Hui Wu, <!--strong-->Michele Merler<!--/strong-->, Rosario Uceda-Sosa, John R Smith. <strong>Learning to make better mistakes: Semantics-aware visual food recognition</strong>. <em> ACM Multimedia (<strong>MM</strong>) 2016</em>. 
-<a class="btn btn-primary btn-outline btn-xs" href="./papers/p172-wu.pdf" target="_blank"> PDF </a> 
-<a class="btn btn-primary btn-outline btn-xs toggle" href="#food_mm16" > BibTeX</a>
-<a class="btn btn-primary btn-outline btn-xs" href="./foodvr.html"> Project</a>
-<div class="bibtex" id="food_mm16" style="display:none;">
-					<code>
-					@inproceedings{Wu_MM16,<br>
-			 &nbsp; author = {Hui Wu and Michele Merler and Rosario Uceda{-}Sosa and John R Smith},<br>
-			 &nbsp; title = {Learning to Make Better Mistakes: Hierarchical Food Recognition in the Wild},<br>
-	        &nbsp; booktitle = {2016 {ACM} International Conference on Multimedia, {MM} 2016},<br>
-	        &nbsp; year = {2016}<br>
-			 }</code>		
-			</div>
-
-</small></p></li>
-<!--li><p>Quan Zou, Wei Liu, <strong>Michele Merler</strong>,  Rongrong Ji. <strong>Advanced learning for large-scale heterogeneous computing</strong>. <em> Neurocomputing (<strong>NEU</strong>) 2016</em>. [Bibtex]</p></li-->
-</ul>
-
-<h3 id="2015">2015</h3>
-
-<ul>
-<li><p><small><!--strong-->Michele Merler<!--/strong-->, Liangliang Cao, John R Smith. <strong>You are what you tweet… pic! gender prediction based on semantic analysis of social media images</strong>. <em>IEEE International on Conference on Multimedia and Expo (<strong>ICME</strong>) 2015</em>. 
-<a class="btn btn-primary btn-outline btn-xs" href="./papers/merler_icme15.pdf" target="_blank"> PDF </a> 
-<a class="btn btn-primary btn-outline btn-xs toggle" href="#twitter_gender_icme15" > BibTeX</a>
-<a class="btn btn-primary btn-outline btn-xs" href="./papers/GenderPredictionICME2015.pdf" target="_blank"> Slides </a> 
-<div class="bibtex" id="twitter_gender_icme15" style="display:none;">
-					<code>
-					@inproceedings{Merler_ICME15,<br>
-			 &nbsp; author = {Michele Merler and Liangliang Cao and John R Smith},<br>
-			 &nbsp; title = {You are what you tweet...pic! Gender prediction based on semantic analysis of social media images},<br>
-	        &nbsp; booktitle = {2015 IEEE International Conference on Multimedia and Expo (ICME)},<br>
-			 &nbsp; pages = {1 - 6}<br> 
-			 &nbsp; year = {2015}<br>
-			 }</code>		
-			</div>
-</small></p></li>
-
-<li><p><small>Junjie Cai, <!--strong-->Michele Merler<!--/strong-->, Sharath Pankanti, Qi Tian. <strong>Heterogeneous semantic level features fusion for action recognition</strong>. <em>IEEE International on Conference on Multimedia Retrieval (<strong>ICMR</strong>) 2015</em>. 
-<a class="btn btn-primary btn-outline btn-xs" href="./papers/p307-cai.pdf" target="_blank"> PDF </a> 
-<a class="btn btn-primary btn-outline btn-xs toggle" href="#action_icmr15" > BibTeX</a>
-<div class="bibtex" id="action_icmr15" style="display:none;">
-					<code>
-					@inproceedings{Cai_ICMR15,<br>
-			 &nbsp; author = {Cai, Junjie and Merler, Michele and Pankanti, Sharath and Tian, Qi},<br>
-			 &nbsp; title = {Heterogeneous Semantic Level Features Fusion for Action Recognition},<br>
-	        &nbsp; booktitle = {Proceedings of the 5th ACM on International Conference on Multimedia Retrieval},<br>
-			 &nbsp; series = {ICMR '15},<br>
-			 &nbsp; pages = {307--314},<br>
-            &nbsp; year = {2015}<br>
-			 }</code>		
-			</div>
-</small></p></li>
-
-<li><p><small>Mani Abedini, Noel CF Codella, Jonathan H Connell, Rahil Garnavi, <!--strong-->Michele Merler<!--/strong-->, Sharath Pankanti, John R Smith, Tanveer Syeda-Mahmood <strong>A generalized framework for medical image classification and recognition</strong>. <em>IBM Journal of Research and Development(<strong>IBM-JRD</strong>) 2015</em>. 
-<a class="btn btn-primary btn-outline btn-xs" href="./papers/medical_jrd15.pdf" target="_blank"> PDF </a> 
-<a class="btn btn-primary btn-outline btn-xs toggle" href="#medical_jrd15" > BibTeX</a>
-<div class="bibtex" id="medical_jrd15" style="display:none;">
-					<code>
-@article{Abedini_JRD15, <br>
-&nbsp; author={M. Abedini and N. C. F. Codella and J. H. Connell and R. Garnavi and M. Merler and S. Pankanti and J. R. Smith and T. Syeda-Mahmood}, <br>
-&nbsp; journal={IBM Journal of Research and Development}, <br>
-&nbsp; title={A generalized framework for medical image classification and recognition}, <br>
-&nbsp; year={2015}, <br>
-&nbsp; volume={59}, <br>
-&nbsp; number={2/3}, <br>
-&nbsp; pages={1:1-1:18} <br>
-}</code>		
-			</div>
-</small></p></li>
-
-
-
-</ul>
-
-<h3 id="2014">2014</h3>
-
-<ul>
-
-<li><p><small>Felix X Yu, Liangliang Cao, <!--strong-->Michele Merler<!--/strong-->, Noel Codella, Tao Chen, John R Smith, Shih-Fu Chang. <strong>Modeling attributes from category-attribute proportions</strong>. <em>ACM Multimedia (<strong>MM</strong>) 2014</em>. 
-<a class="btn btn-primary btn-outline btn-xs" href="./papers/felixyu_llp_mm2014.pdf" target="_blank"> PDF </a> 
-<a class="btn btn-primary btn-outline btn-xs toggle" href="#attributes_mm14" > BibTeX</a>
-<div class="bibtex" id="attributes_mm14" style="display:none;">
-					<code>
-					@inproceedings{Yu_MM14,<br>
-			 &nbsp; author = {Yu, Felix X. and Cao, Liangliang and Merler, Michele and Codella, Noel and Chen, Tao and Smith, John R. and Chang, Shih-Fu},<br>
-			 &nbsp; title = {Modeling Attributes from Category-Attribute Proportionsd},<br>
-	        &nbsp; booktitle = {2016 {ACM} International Conference on Multimedia, {MM} 2014},<br>
-			 &nbsp; pages = {977--980},<br>
-	        &nbsp; year = {2014}<br>
-			 }</code>		
-			</div>
-</small></p></li>
-			
-<li><p><small>Noel Codella, Jonathan Connell, Sharath Pankanti, <!--strong-->Michele Merler<!--/strong-->, John R Smith. <strong>Automated medical image modality recognition by fusion of visual and text information</strong>. <em>International Conference on Medical Image Computing and Computer-Assisted Intervention(<strong>MICCAI</strong>) 2014</em>. 
-<a class="btn btn-primary btn-outline btn-xs" href="./papers/modality_miccai15.pdf" target="_blank"> PDF </a> 
-<a class="btn btn-primary btn-outline btn-xs toggle" href="#modality_miccai15" > BibTeX</a>
-<a class="btn btn-primary btn-outline btn-xs" href="./papers/IBMimageCLEF13.pdf" target="_blank"> CLEF13 Slides </a> 
-<div class="bibtex" id="modality_miccai15" style="display:none;">
-					<code>
-					@inproceedings{Codella_MICCAI14,<br>
-			 &nbsp; author = {Noel Codella and Jonathan Connell and Sharath Pankanti and Michele Merler and John R Smith},<br>
-			 &nbsp; title = {Automated Medical Image Modality Recognition by Fusion of Visual and Text Information},<br>
-	        &nbsp; booktitle = {Medical Image Computing and Computer-Assisted Intervention -- MICCAI 2014: 17th International Conference, Boston, MA, USA, September 14-18, 2014, Proceedings, Part II},<br>
-			 &nbsp; pages = {487--495},<br>
-            &nbsp; year = {2014}<br>
-			 }</code>		
-			</div>
-</small></p></li>
-
-
-
-</ul>
-<h3 id="EARLIER">PRE-2013</h3>
-<ul>
-<li><p><small><!--strong-->Michele Merler<!--/strong-->, Bert Huang, Lexing Xie, Gang Hua, Apostol Natsev. <strong>Semantic model vectors for complex video event recognition</strong>. <em>IEEE Transactions on Multimedia (<strong>TMM</strong>) 2012</em>. 
-<a class="btn btn-primary btn-outline btn-xs" href="./papers/SMV_TMM.pdf" target="_blank"> PDF </a> 
-<a class="btn btn-primary btn-outline btn-xs toggle" href="#smv_tmm12" > BibTeX</a>
-<a class="btn btn-primary btn-outline btn-xs" href="http://www1.cs.columbia.edu/~mmerler/SMV.html" target="_blank"> Project </a> 
-<div class="bibtex" id="smv_tmm12" style="display:none;">
-					<code>
-					@article{Merler_TMM12,<br>
-			 &nbsp; author = {Michele Merler and Bert Huang and Lexing Xie and Gang Hua and Apostol Natsev},<br>
-			 &nbsp; title = {Semantic Model Vectors for Complex Video Event Recognition},<br>
-	        &nbsp; journal = {IEEE Transactions on Multimedia},<br>
-			&nbsp; volume = {14},<br>
-			&nbsp; number = {1},<br>
-	        &nbsp; pages = {88-101},<br>
-            &nbsp; year = {2012}<br>
-			 }</code>		
-			</div>
-</small></p></li>
-			
-<li><p><small><!--strong-->Michele Merler<!--/strong-->, Rong Yan, John R Smith. <strong>Imbalanced rankboost for efficiently ranking large-scale image/video collections</strong>. <em>IEEE International Conference on Computer Vision and Pattern Recognition (<strong>CVPR</strong>) 2009</em>. 
-<a class="btn btn-primary btn-outline btn-xs" href="https://pdfs.semanticscholar.org/031b/a6bf0d6df8bd3aa686ce85791b7d74f0b6d5.pdf" target="_blank"> PDF </a> 
-<a class="btn btn-primary btn-outline btn-xs toggle" href="#rank_cvpr09" > BibTeX</a>
-<a class="btn btn-primary btn-outline btn-xs" href="./papers/MerlerCVPR09poster.pdf" target="_blank"> Poster </a> 
-<div class="bibtex" id="rank_cvpr09" style="display:none;">
-					<code>
-					@inproceedings{Merler_CVPR09,<br>
-			 &nbsp; author = {Michele Merler and Rong Yan and John R Smith},<br>
-			 &nbsp; title = {Imbalanced rankboost for efficiently ranking large-scale image/video collections},<br>
-	        &nbsp; booktitle = {IEEE International Conference on Computer Vision and Pattern Recognition (CVPR)},<br>
-			 &nbsp; year = {2009}<br>
-			 }</code>		
-			</div>
-</small></p></li>
-
-<li><p><small>Rong Yan, Marc-Olivier Fleury, <!--strong-->Michele Merler<!--/strong-->, Apostol Natsev, John R. Smith. <strong>Large-Scale Multimedia Semantic Concept Modeling using Robust Subspace Bagging and MapReduce.</strong> <em> First ACM workshop on Large-scale multimedia retrieval and mining @ACM Multimedia (</strong>LS-MMRM</strong>) 2009</em>.
-<a class="btn btn-primary btn-outline btn-xs" href="./papers/MM09-DataIntensive.pdf" target="_blank"> PDF </a> 
-<a class="btn btn-primary btn-outline btn-xs toggle" href="#mapreduce_mm09" > BibTeX</a>
-<div class="bibtex" id="mapreduce_mm09" style="display:none;">
-					<code>
-					@inproceedings{Yan_MM09,<br>
-			 &nbsp; author = {Rong Yan and Marc-Olivier Fleury and Michele Merler and Apostol Natsev and John R. Smith},<br>
-			 &nbsp; title = {Large-scale multimedia semantic concept modeling using robust subspace bagging and MapReduce},<br>
-	        &nbsp; booktitle = {Proceedings of the First ACM workshop on Large-scale multimedia retrieval and mining},<br>
-			&nbsp; series = {LS-MMRM '09},<br>
-			 &nbsp; year = {2009}<br>
-			 }</code>		
-			</div>
-</small></p></li>
-
-<li><p><small><!--strong-->Michele Merler<!--/strong-->, John R Kender. <strong>Semantic keyword extraction via adaptive text binarization of unstructured unsourced video</strong>. <em>IEEE International Conference on Image Processing (<strong>ICIP</strong>) 2009</em>. 
-<a class="btn btn-primary btn-outline btn-xs" href="./papers/merler_ICIP09.pdf" target="_blank"> PDF </a> 
-<a class="btn btn-primary btn-outline btn-xs toggle" href="#binary_icip09" > BibTeX</a>
-<a class="btn btn-primary btn-outline btn-xs" href="./papers/MerlerCVPR09poster.pdf" target="_blank"> Poster </a> 
-<div class="bibtex" id="binary_icip09" style="display:none;">
-					<code>
-					@inproceedings{Merler_ICIP09,<br>
-			 &nbsp; author = {Michele Merler and John R Kender},<br>
-			 &nbsp; title = {Semantic keyword extraction via adaptive text binarization of unstructured unsourced video},<br>
-	        &nbsp; booktitle = {IEEE International Conference on Image Processing (ICIP)},<br>
-			 &nbsp; year = {2009}<br>
-			 }</code>		
-			</div>
-</small></p></li>
-
-<li><p><small><!--strong-->Michele Merler<!--/strong-->, Carolina Galleguillos, Serge Belongie. <strong>Recognizing groceries in situ using in vitro training data</strong>. <em>2nd International Workshop on Semantic Learning Applications in Multimedia @CVPR (<strong>SLAM</strong>) 2007</em>. 
-<a class="btn btn-primary btn-outline btn-xs" href="./papers/grozi_cvprw07.pdf" target="_blank"> PDF </a> 
-<a class="btn btn-primary btn-outline btn-xs toggle" href="#grozi_cvprw07" > BibTeX</a>
-<a class="btn btn-primary btn-outline btn-xs" href="http://grozi.calit2.net/" target="_blank">
-  Project
-</a>
-<div class="bibtex" id="grozi_cvprw07" style="display:none">  
-					<code><small>
-					@inproceedings{Merler_CVPRW07,<br>
-			 &nbsp; author = {Michele Merler and Carolina Galleguillos and Serge Belongie},<br>
-			 &nbsp; title = {Recognizing groceries in situ using in vitro training data},<br>
-             &nbsp; booktitle = {{IEEE} Conference on Computer Vision and Pattern Recognition  Workshops, {CVPR} Workshops},<br>
-	         &nbsp; year = {2007}<br>
-			 }</small></code>		
-			</div>
-</small></p></li>
-</ul>
-
-<h3 id="PATENTS">PATENTS</h3>
-<ul>
-  <li><p><small>Michele Merler, Dhiraj Joshi, Quoc-Bao Nguyen, Stephen C Hammer, John Joseph Kent, John R Smith, Rogerio Feris. <strong>Auto-curation and personalization of sports highlights</strong>. <em>US Patent 10,595,101</em> 2020
-<a class="btn btn-primary btn-outline btn-xs" href="https://patents.google.com/patent/US10595101B2/en" target="_blank">
-  GooglePatents
-</a>
-</small></p></li>
-  <li><p><small><!--strong-->Michele Merler<!--/strong-->, Jae-Eun Park, John R Smith, Rosario Uceda-Sosa. <strong>Individual and user group attributes discovery and comparison from social media visual content</strong>. <em>US Patent 10,282,677 </em>2019
-<a class="btn btn-primary btn-outline btn-xs" href="https://patents.google.com/patent/US10282677B2/en" target="_blank">
-  GooglePatents
-</a>
-</small></p></li>
-<li><p><small>Michele Merler, John R Smith, Rosario Uceda-Sosa, Hui Wu. <strong>Image classification utilizing semantic relationships in a classification hierarchy</strong>. <em>US Patent 9,928,448</em> 2018
-<a class="btn btn-primary btn-outline btn-xs" href="https://patents.google.com/patent/US9928448B1/en" target="_blank">
-  GooglePatents
-</a>
-</small></p></li>
-<li><p><small>Liangliang Cao, <!--strong-->Michele Merler<!--/strong-->, John R Smith. <strong>Systems and methods for inferring gender by fusion of multimodal content</strong>. <em>US Patent 9,684,852</em> 2017
-<a class="btn btn-primary btn-outline btn-xs" href="https://patents.google.com/patent/US9684852B2/en" target="_blank">
-  GooglePatents
-</a>
-</small></p></li>
-<li><p><small><!--strong-->Michele Merler<!--/strong-->, John R Kender. <strong>Kalman filter approach to augment object tracking</strong>. <em>US Patent 9,177,229 </em>2015
-<a class="btn btn-primary btn-outline btn-xs" href="https://patents.google.com/patent/US9177229B2/en" target="_blank">
-  GooglePatents
-</a>
-</small></p></li>
- 
-</ul>
-  </div>
-</div>
-
-    </div>
-  </section>
-  
-
-  
-  
-  
-  <section id="professional" class="home-section">
-    <div class="container">
-      
-
-
-<div class="row">
-  <div class="col-xs-12">
-    <h1>Professional Activities</h1>
-    
-<ul>
-  <li>Program Chair for the 6th Workshop on Computer Vision in Sports (CVSports) @CVPR 2020</li>
-  <li>Program Chair for the First Workshop on Fair, Data Efficient and Trusted Computer Vision (FA.DE.TR.CV) @CVPR 2020</li>
-<li>Program Chair for the Second International Workshop on Bias Estimation in Face Analytics (BEFA) @CVPR 2019</li>
-  <li>Program Chair for the International Conference on Image Analysis and Processing (ICIAP) 2019</li>
-<li>Demo Chair for the International Conference on MultiMedia Modeling (MMM) 2019</li>
-<li>Program Chair for First International Workshop on Bias Estimation in Face Analytics (BEFA) @ECCV 2018</li>
-<li>Area Chair at ACM Multimedia 2016, 2017. Multimedia Search and Recommendation track</li>
-<li>Registration Chair at VCIP 2017</li>
-<li>Guest Editor for the Neurocomputing Special Issue on Advanced Learning for Large-Scale Heterogeneous Computing 2016 </li>
-<li>Local Arragement Chair and Web Chair at ICMR 2016</li>
-<li>Panelist at National Science Foundation (NSF), IIS Division 2015 </li>
-<li>Co-organizer of the Greater New York Multimedia and Vision Meeting (GNYMV) 2012-2014 </li>
-<li>TPC for CVPR, ECCV, ICCV, ACM Multimedia, ICMR, FG, ICME, ICPR</li> 
-<li>Reviewer for IEEE TMM, IEEE TIP, CVIU, TOMCCAP, JVCI, TCSVT, JVCIR </li>
-<li>Member of IEEE and IEEE Circuit and Systems Society</li>
-</ul>
-
-  </div>
-</div>
-
-    </div>
-  </section>
-
-   <section id="awards" class="home-section">
-    <div class="container">
-      
-
-
-<div class="row">
-  <div class="col-xs-12">
-<h1>Honors and Awards</h1>
-
-<ul>
-<li>IBM Corporate Award (AI Video Enrichment and Editing) (2019)</li>
-  <li>IBM Research Division Award (Watson Visual Recognition Services Contributions) (2018)</li>
-<li>Best Digital Development from Yahoo Sports Tech Awards for Wimbledon Cognitive Highlights (2018) </li>
-<li>Best Reviewer Award (ICMR 2015)</li>
-<li>First Place in ImageCLEF Medical Image Modality Classification (2013) </li>
-<li>IBM Research Division Award (Multimedia Semantic Modeling) (2013)</li>
-<li>IBM Outstanding Technical Accomplishment (Multimedia Group) (2012)</li>
-  <li>IBM Eminence and Excellence Award (Greater New York Multimedia and Vision Workshop) (2012)</li>
-<li>First Place in ImageCLEF Medical Image Modality Classification (2012) </li>
-<li>Yahoo! Key Scientific Challenge Award (2009)</li>
-<li>VideOlympics "People's Choice Award" (group) for IMARS Multimedia Retrieval System, ACM CIVR (2008)</li>
-<li>California Institute of Information and Telecommunications Technology Summer Undergraduate Research Scholarship (2006) </li>
-</ul>
-
-  </div>
-</div>
-
-    </div>
-  </section>
-
-<section id="personal" class="home-section">
-    <div class="container">
-      
-
-
-<div class="row">
-  <div class="col-xs-12">
-<h1>Personal Interests</h1>
-
-
-I love calcio (or footbal, or soccer). Both to watch and to play with my friends! I've made so many great memories playing in and around NYC...
-
-<br>
-<br>
-
-<!--div>
-  <ul id="hexGrid">
-    
-      
-      <li class="hex">
-        <div class="hexIn">
-          <a class="hexLink">
-            <img src="./personal/blue-team-2017-final.jpg" alt="" />
-            <mx1>Blue Team</mx1>
-            <p>2017 IBM Summer League (always the best)</p>
-          </a>
-        </div>
-      </li>
-      <li class="hex">
-        <div class="hexIn">
-          <a class="hexLink">
-            <img src="./personal/wcsl-champs-2017.jpg" alt="" />
-            <mx1>IBM Team</mx1>
-            <p>2017 Westchester Corporate League Winners</p>
-          </a>
-        </div>
-      </li>
-      <li class="hex">
-        <div class="hexIn">
-          <a class="hexLink" href="./personal/IBM_Soccer_Video_092617.mp4">
-            <img src="./personal/CEhXoPxWYAEAx_w.jpg" alt="" />
-            <mx1>IBM FC</mx1>
-            <p>3rd year win vs. Agency United (click for video)</p>
-          </a>
-        </div>
-      </li>
-      
-      <li class="hex">
-        <div class="hexIn">
-          <a class="hexLink" >
-            <img src="./personal/IMG_1145.jpg" alt="" />
-            <mx1>Piknik</mx1>
-            <p>2017 Summer Asphalt Green Winners</p>
-          </a>
-        </div>
-      </li>
-      <li class="hex">
-        <div class="hexIn">
-          <a class="hexLink">
-            <img src="./personal/17545223_10104775027673094_2944777249170517069_o.jpg" alt="" />
-            <mx1>The Zappas</mx1>
-            <p>2016 Winter Asphalt Green Winners</p>
-          </a>
-        </div>
-      </li>
-	  <li class="hex">
-        <div class="hexIn">
-          <a class="hexLink">
-            <img src="./personal/15370027_10101365700587022_1033943689374671004_o.jpg" alt="" />
-            <mx1>The Zappas</mx1>
-            <p>Snow is not a problem...</p>
-          </a>
-        </div>
-      </li>
-	  <li class="hex">
-        <div class="hexIn">
-          <a class="hexLink">
-            <img src="./personal/10411289_10152776629097379_2875942648357519281_n.jpg" alt="" />
-            <mx1>Vatican City</mx1>
-            <p>2015 Winter NY Urban Soccer Winners</p>
-          </a>
-        </div>
-      </li>
-    <li class="hex">
-        <div class="hexIn">
-          <a class="hexLink" >
-            <img src="./personal/10626451_10152329934492406_8920194441317035368_n.jpg" alt="" />
-            <mx1>Vatican City</mx1>
-            <p>2014 NYC World Cup Winners</p>
-          </a>
-        </div>
-      </li>
-	  <li class="hex">
-        <div class="hexIn">
-          <a class="hexLink" href="http://www.juventus.com/" target="_blank">
-            <img src="./personal/juventus.jpg" alt="" />
-            <mx1>Juventus</mx1>
-            <p>The team I support</p>
-          </a>
-        </div>
-      </li>
-	  <li class="hex">
-        <div class="hexIn">
-          <a class="hexLink">
-            <img src="./personal/18582643_10104950280105814_2447260123299365488_n.jpg" alt="" />
-            <mx1>One day...</mx1>
-            <p></p>
-          </a>
-        </div>
-      </li>
-  </ul>
-  </div>
-
-
-  </div>
-</div-->
-
-    </div>
-	<div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:900px;height:500px;overflow:hidden;visibility:hidden;">
-        <!-- Loading Screen -->
-        <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
-            <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="images/spin.svg" />
-        </div>
-        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:900px;height:500px;overflow:hidden;">
-            <div data-p="170.00">
-                <img data-u="image" src="./personal/nycoed18.jpg" />
-                <div data-u="caption" style="position:absolute;top:420px;left:50px;width:800px;height:70px;font-family:Oswald,sans-serif;font-size:32px;font-weight:150;line-height:1.2;text-align:center;color:white">Pub Winners NYCOED Spring 2018 Friday Chelsea Challenge Cup Victors</div>
-            
-            </div>  
-			<div data-p="170.00">
-                <img data-u="image" src="./personal/blue-team-2017-final.jpg" />
-                <div data-u="caption" style="position:absolute;top:420px;left:50px;width:800px;height:70px;font-family:Oswald,sans-serif;font-size:32px;font-weight:150;line-height:1.2;text-align:center;color:white">Blue Team 2017 IBM Summer League (always the best)</div>
-            </div>
-            <div data-p="170.00">
-                <img data-u="image" src="./personal/wcsl-champs-2017.jpg" />
-                <div data-u="caption" style="position:absolute;top:390px;left:50px;width:800px;height:70px;font-family:Oswald,sans-serif;font-size:32px;font-weight:150;line-height:1.2;text-align:center;color:white">IBM Team - 2017 Westchester Corporate League Champions</div>
-            </div>
-            <div data-p="170.00">
-                <img data-u="image" src="./personal/CEhXoPxWYAEAx_w.jpg" />
-                <div data-u="caption" style="position:absolute;top:440px;left:50px;width:800px;height:70px;font-family:Oswald,sans-serif;font-size:32px;font-weight:150;line-height:1.2;text-align:center;color:white">IBM FC vs. Agency United (click <a href="./personal/IBM_Soccer_Video_092617.mp4" target="_blank">here</a> for video)</div>
-            </div>
-			<div data-p="170.00">
-                <img data-u="image" src="personal/IMG_1145.jpg" />
-                <div data-u="caption" style="position:absolute;top:420px;left:50px;width:800px;height:70px;font-family:Oswald,sans-serif;font-size:32px;font-weight:150;line-height:1.2;text-align:center;color:white">Piknik Summer 2017 Asphalt Green Champions</div>
-            </div>
-            <div data-p="170.00">
-                <img data-u="image" src="./personal/17545223_10104775027673094_2944777249170517069_o.jpg" />
-                <div data-u="caption" style="position:absolute;top:420px;left:50px;width:800px;height:70px;font-family:Oswald,sans-serif;font-size:32px;font-weight:150;line-height:1.2;text-align:center;color:white">The Zappas Winter 2017 Asphalt Green Champions</div>
-            </div>
-            <div data-p="170.00">
-                <img data-u="image" src="./personal/15370027_10101365700587022_1033943689374671004_o.jpg" />
-                <div data-u="caption" style="position:absolute;top:50px;left:50px;width:800px;height:70px;font-family:Oswald,sans-serif;font-size:32px;font-weight:150;line-height:1.2;text-align:center;color:white">Snow is not a problem...</div>
-            </div>
-            <div data-p="170.00">
-                <img data-u="image" src="./personal/10411289_10152776629097379_2875942648357519281_n.jpg" />
-                <div data-u="caption" style="position:absolute;top:420px;left:50px;width:800px;height:70px;font-family:Oswald,sans-serif;font-size:32px;font-weight:150;line-height:1.2;text-align:center;color:white"> Vatican City Winter 2015 NY Urban Soccer Champions</div>
-            </div>
-            <div data-p="170.00">
-                <img data-u="image" src="./personal/10626451_10152329934492406_8920194441317035368_n.jpg" />
-                <div data-u="caption" style="position:absolute;top:30px;left:50px;width:800px;height:70px;font-family:Oswald,sans-serif;font-size:32px;font-weight:150;line-height:1.2;text-align:center;color:white">Vatican City 2014 NYC World Cup Winners</div>
-            </div>
-          
-			<div data-b="0" data-p="170.00">
-                <img data-u="image" src="./personal/juventus.jpg" />
-                <div data-u="caption" style="position:absolute;top:420px;left:50px;width:800px;height:70px;font-family:Oswald,sans-serif;font-size:32px;font-weight:150;line-height:1.2;text-align:center;color:white">The <a href="http://www.juventus.com" target="_blank">team</a> I support</div>
-            </div>
-			<div data-p="170.00">
-                <img data-u="image" src="./personal/18582643_10104950280105814_2447260123299365488_n.jpg" />
-                <div data-u="caption" style="position:absolute;top:50px;left:50px;width:800px;height:70px;font-family:Oswald,sans-serif;font-size:32px;font-weight:150;line-height:1.2;text-align:center;">one day...</div>
-            
-            </div>
-			
-			
-        </div>
-        <!-- Bullet Navigator -->
-        <div data-u="navigator" class="jssorb052" style="position:absolute;bottom:12px;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
-            <div data-u="prototype" class="i" style="width:16px;height:16px;">
-                <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
-                    <circle class="b" cx="8000" cy="8000" r="5800"></circle>
-                </svg>
-            </div>
-        </div>
-        <!-- Arrow Navigator -->
-        <div data-u="arrowleft" class="jssora053" style="width:55px;height:55px;top:0px;left:25px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
-            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
-                <polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
-            </svg>
-        </div>
-        <div data-u="arrowright" class="jssora053" style="width:55px;height:55px;top:0px;right:25px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
-            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
-                <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
-            </svg>
-        </div>
-    </div>
-    <script type="text/javascript">jssor_1_slider_init();</script>
-    <!-- #endregion Jssor Slider End -->
-
-  </section>
-  
-
-
-
-<footer class="site-footer">
-  <div class="container">
-    <p class="powered-by" id="datefoot">
-
-
-      <span class="pull-right" aria-hidden="true">
-        <a href="http://www.michelemerler.com/#" id="back_to_top">
-          <span class="button_icon">
-            <i class="fa fa-chevron-up fa-2x"></i>
-          </span>
-        </a>
-      </span>
-
-    </p>
-  </div>
-</footer>
-
-
-
-<script>
-function myFunction() {
-  var d = new Date();
-  var n = d.getFullYear();
-  document.getElementById("datefoot").innerHTML = "© " + n + " Michele Merler";
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- PAGE settings -->
+  <style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
 }
-</script>
-    
 
-    
-    
-    <script id="dsq-count-scr" src="./js/count.js" async=""></script>
-    
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
 
-    
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+<img src="nalini_face.jpg" alt="Nalini Ratha" width="100" height="100"> 
+<!-- img src="nalini_face.jpg" alt="Nalini Ratha" -->
+<h1> Introduction </h1>
+Nalini K. Ratha is a Research Staff Member at the IBM Thomas J. Watson Research Center, Yorktown Heights, New York where he lead the biometrics research effort in the area of enhancing security of biometrics systems and performance evaluation of biometrics systems. Currently, he focuses on extending the techniques to build robust and trustworthy AI systems. He has co-edited two books entitled “Advances in Biometrics: Sensors, Algorithms and Systems” and “Automatic Fingerprint Recognition Systems” published by Springer and co-authored a popular textbook entitled “A guide to Biometrics Selection and System design” published by Springer. In the past, he has been associated with several leading biometrics conference starting with some of the very early biometrics conferences as general co-chair of IEEE AutoID 02 and SPIE Conf. on Biometrics in Human Identification 2004, 2005, co-chair of an associated theme on biometrics at ICPR 2006 and ICPR 2008 and also the co-chair of CVPR workshop on Biometrics 2006-2009, and IEEE Biometrics Theory, Applications and Sytems (BTAS 07 -- BTAS 09). More recently, he was the general co-chair of BTAs 2016 and ISAB 2017 and 2018 and program co-chair of IJCB 2020. Over last couple of years, he has conducted several workshops and CVPR/ECCV/ICCV on bias, blockchain and disguised faces in the wild. During CVPR 2020, he is leading a workshop on Trustworthy Vision Systems. In the past, he served on the editorial board of Pattern Recognition journal and IEEE Trans. on Image Processing. He is a guest co-editor of a special issue on biometrics for IEEE Trans. on SMC-B and also for IEEE Trans. on Information Forensics and Security. He served on the editorial board of IEEE Trans. on Pattern Analysis and Machine Intelligence and IEEE Trans. on Systems, Man and Cybernetics- Part B. Recently, he is involved in co-editing a special issue on Domain Adaptation in Visual Understanding (DAVU) for Pattern Recognition journal. He has received several patent awards and a “Research Division” award and an “Outstanding Technical Innovation Award” at IBM and named a “Master Inventor” at IBM Research in 2018. He continues to teach at Cooper Union and NYU-Poly as an Adjunct professor for last several years. He served as the President of the IEEE Biometrics Council from Jan 2011-Dec 2012 and currently serves as the nomination chair for the IEEE Biometrics Council. He has served on advisory board of EU-INGRESS and EU-Fidelity and served on several NSF evaluation panels. 
 
-    
-    <script src="./js/jquery.min.js" integrity="sha512-3P8rXCuGJdNZOnUx/03c1jOTnMn3rP63nBip5gOP2qmUh5YAdVAvFZ1E+QLZZbC1rtMrQb+mah3AfYW11RUrWA==" crossorigin="anonymous"></script>
-    <script src="./js/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
-    <script src="./js/bootstrap.min.js" integrity="sha512-iztkobsvnjKfAtTNdHkGVjAYTrrtlC7mGp/54c40wowO7LhURYl3gVzzcEqGl/qKXQltJ2HwMrdLcNUdo+N/RQ==" crossorigin="anonymous"></script>
-    <script src="./js/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
-    <script src="./js/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
-    
-    
-    <script src="./js/hugo-academic.js"></script>
-    
+He received his Ph. D. from the Department of Computer Science at Michigan State University and B.Tech in Electrical Engineering and M. Tech in Computer science and Engineering from Indian Institute of Technology, Kanpur. He is a Fellow of IEEE, Fellow of IAPR and ACM Distinguished Scientist.  His current research interests include biometrics, computer vision, pattern recognition and special purpose architecture for computer vision systems. In 2019, he won the IEEE Biometrics Council Leadership award. 
+<H1> Professional Membership </h1>
+<ol>
+  <li> Fellow, IEEE </li>
+  <li>Fellow, IAPR </li>
+  <li>Distinguished Scientist, ACM</li>
+</ol> 
+<H1> Awards and recognition </h1>
+<ul>
+<li> 2019 IEEE Biometrics Council Leadership Award </li>
+<li>2019 IBM Research Division Award </li>
+<li>2019 IBM 22nd Invention Plateau achievement award</li>
+<li>2019 IBM 21st Invention Plateau achievement award</li>
+<li> 2018 IBM Master Inventor </li>
+<li>2018 IBM 20th Invention Plateau achievement award</li>
+<li>2018 IBM 19th Invention Plateau achievement award</li>
+<li>2018 IBM 18th Invention Plateau achievement award</li>
+<li>2018 IBM 17th Invention Plateau achievement award</li>
+<li>2018 IBM 16th Invention Plateau achievement award</li>
+<li>2016 IBM Fifteenth Invention Plateau achievement award</li>
+<li>2015 IBM Thirteenth Invention Plateau achievement award</li>
+<li>2014 IBM Ninth Invention Plateau achievement award</li>
+<li>2010 IBM Outstanding Technical Accomplishment Award</li>
+<li>2008 IBM Outstanding Innovation Award</li>
+<li>2008 IBM Eighth Invention Plateu achievement award</li>
+<li>2008 IBM Outstanding Technical Innovation Award</li>
+<li>2008 IBM Seventh Invention Plateu achievement award</li>
+<li>2007 IBM Fifth Invention Plateu achievement award</li>
+<li>2004 IBM Fourth Invention Plateu achievement award</li>
+<li>2001 IBM Third Invention Plateau achievement award</li>
+<li>2000 IBM Second Invention Plateau achievement award</li>
+<li>1999 IBM First Invention Plateau achievement award</li>
+<li>1998 IBM Research Division award</li>
+<li>1997 IBM first patent application invention achievement award</li>
+<li>1991 CMC Appreciation Award for successful completion of FACTS project</li>
+<li>1991 First Prize, technical paper contest on chance print fingerprint matching from Ministry of Home Affairs, India (with  N.  N. Murthy  and S. Ramesh)</li>
+<li>1977-82 National Merit Scholarship, Govt. of India</li>
+<li>1977 First in order of merit, Intermediate Science, Berhampur University</li>
+<li>1975-77 National Merit Scholarship, Govt. of  India</li>
+</ul>
 
-    
-    
-      
-      
-      <script src="./js/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
-      
+<H1> Projects </h1>
+<table style="width:80%">
+  <tr>
+    <th>Project</th>
+    <th>Short Descrption</th>
+    <th>Impact</th>
+  </tr>
+  <tr>
+    <td>Positive Personal Identification (PPID) </td>
+    <td>The key requirements in a largescale benefit or voting enrollment system requires human enrollment that can’t 
+	be fooled to takin duplicate entries. Many government systems have this basic need. In our PPID system, fingerprint based duplicate 
+	checking was deployed using a scalable system. The key innovation was around a sub-linear search algorithm for fingerprint matching 
+	using minutia-triple in the lines of geometric hashing. </td>
+    <td>Code delivery, Papers and IP</td>
+  </tr>
+  <tr>
+    <td>Large scale fingerprint indexing</td>
+    <td>A follow-on FOAK years later was approved to improve the system designed through PPID. 
+	We introduced many textural features around minutia to improve the system performance. 
+	As a result, a novel registration free method of fingerprint verification was also developed.  </td>
+    <td>Code delivery, Papers and IP</td>
+  </tr>
+    <tr>
+    <td>Fusion of Biometrics and Biography</td>
+    <td>Often in large biometrics enrollment systems (e.g., DMV, passport, visa) a large amount of biographical details is available. 
+	In fact, the biographical matching is also quite in exact as names are spelt differently and addresses are written differently. 
+	In addition to fusion of several biometrics modalities, we introduced inclusion of 
+	biographic engine in the mix of biometrics to extend the utility of biographic information into the de-duplication process.  </td>
+    <td>Code delivery, Papers and IP</td>
+  </tr>
+    <tr>
+    <td>Bodycam based analytics</td>
+    <td>It is perceived that the ultimate truth can be collected in videos in many law enforcement encounters. 
+	The bodycam and similar devices used in civil applications as well collect video that is often very noisy due to the environment they operate. 
+	We developed human detection and processing algorithms including face and human attributes from video frames for indexing and recognition. 
+	A research issues in this area is how to protect the privacy of entities such as face, cars and other identifiable information. 
+	Using blockchain technology, we have show how multiple version of the video can be generated while ensuring that no tampering happened to the core video.  </td>
+    <td>Code delivery, Papers and IP</td>
+  </tr>
+  <tr>
+    <td>Face recognition in video and Face analytics as services API </td>
+    <td>Face is ubiquitous in almost all videos. Many applications need matching faces and classify different facial attributes beyond typical law enforcement use. 
+	In fact, most deep learning methods get applied invariably to face analytics. 
+	We have shown how to learn a face embedding network based on small learning dataset based on the physics of the problem. 
+	Once a reliable embedding is available, we can use it for several attribute prediction including gender, age, and expression to name a few. 
+	These innovations made into API based services for internal and external clients.   </td>
+    <td>Code delivery, Papers and IP</td>
+  </tr>
+    <tr>
+    <td>Smarter Planet: analytic integration and better the news</td>
+    <td>In a complex system involving multiple analytics it is not known how to make the outcome consumable to the use. 
+	Based on a basic sports videos, we analyzed different models to understand how to interpret starting line-up differences and player identification. 
+	In social media, often the crowd sourcing of information makes us possible to understand the pattern of a story based on how quickly it becomes 
+	viral by spreading in the social networks and thus almost creating and substantiating news items that can be created by new agencies. 
+	The multi-modal perception helps validate the content as well as shows us the trend. This is an external government funded project. </td>
+    <td>Code delivery and IP </td>
+  </tr>
+    <tr>
+    <td>Confidence interval estimation</td>
+    <td>In a pattern recognition system, performance reporting is fundamental way to describe how the system behaves. 
+	Often ROC has been used for this purpose. However, without a confidence interval around the error measurements, it is not meaningful. 
+	We reported a non-parametric bootstrap based technique called subset bootstrap to compute confidence interval in biometrics system performance reporting.   </td>
+    <td>Papers and standard </td>
+  </tr>
+    <tr>
+    <td>eSentry</td>
+    <td>Secure authentication: Biometrics attack model and spoofing: Authentication of identity must be secure in all applications. 
+	Biometrics systems need to defend against many attacks starting with presentation attacks. 
+	We developed a threat model for biometrics systems highlighting the dangers that the designers need to handle. 
+	In the process, the template secure storage is an important component. 
+	In a personal smartcard, one can store the template and often the parts of matching can be carried out in a collaborative fashion to provide security. 
+	An extension of the similar approach can be to match in a secure environment using hardware secure modules. 
+	However, if the presentation attacks are not detected using novel methods, the backend security can be rendered useless. 
+	We have proposed techniques for replay attack detection by using data hiding methods and face and iris presentation attacks 
+	using 3-d sensing from 2-d video.
+  </td>
+    <td>Papers, Standards and IP</td>
+  </tr>
+    <tr>
+    <td>Cancelable biometrics</td>
+    <td>A biometrics measurement while provides a non-repudiable connection to the person behind a transaction, often it can be misused violating privacy of the person. 
+	For example, two databases can be matched and links established using biometrics since it is  a unique descriptor of the person. 
+	A second issue related to the non-repudiablity is that if the data is lost due to mishandling the data can be replaced. 
+	In order to address these two issues, we introduced cancelable biometrics by transforming the original biometrics using a non-invertible, 
+	repeatable transform during enrolment. During verification the same transform is applied to the input to match against the transformed template. 
+	Since each database can use a different transform, matching across databases becomes difficult and the enrollment data can be revoked by reenrolling 
+	the person with a new transform. This technique is popular even today in the biometrics research community first introduced by us decades ago. </td>
+    <td>Papers, IP and Media coverage </td>
+	    <tr>
+    <td>Trusted secure authentication on mobile devices (Usable Multi-Factor Authentication and Risk-Based Authorization)</td>
+    <td>ABiometrics authentication on mobile devices is an interesting paradigm since the mobile devices house a set of sophisticated sensors that are 
+	typically not associated with a biometrics sensor. For example, GPS, proximity sensor, altitude sensor, accelerometer can provide context that can 
+	help with establishing the transaction environment. Thus, suitable biometrics can be selected for authentication depending on the situations. 
+	Along with different biometrics modalities, contextual sensing can be added to define the authentication policy. 
+	These techniques initiated from our FOAK project entitled “TSAM” ended up being useful in a DHS funded project for establishing financial industry secure 
+	transaction methods.   </td>
+    <td>Code delivery, Papers and IP </td>
+	    <tr>
+    <td>Anonymous Biometrics Matching</td>
+    <td>Many a times, biometrics search methods needs not be linked the persons behind the biometrics until needed. 
+	For example, the airline industry needs match the passengers against a law-enforcement watch list. 
+	However, the law-enforcement agencies can not reveal the watchlist to airlines. 
+	In order to facilitate a solution for this, we proposed anonymous biometrics matching based on our cancelable biometrics. 
+	With the watchlist available as a transformed version, the airline passenger biometrics can be transformed by a service provider and match against the watchlist. When there is a need to go behind strong matches from the list, the law enforcement can go back to the airlines to reveal the persons of interest. 
+	Thus the overall privacy of the travelers is not compromised.   </td>
+    <td>papers and IP </td>
+	    <tr>
+    <td>Fully Homomorphic encryption</td>
+    <td>AWe believe that if computations can be carried out on encrypted domain, there will less concerns about sharing 
+	data across many domains where data is protected by local compliance regulations. In order to facilitate learning in encrypted domain, 
+	we have shown that FHE can be deployed to produce near similar results. However, this is a baby step towards addressing the larger machine 
+	learning issues in encrypted domain. We continue to evolve our research in this area.  </td>
+    <td>Papers and IP </td>
+	    <tr>
+  </tr>
+  </table>
+<H1> Books </h1>
+<ol>
+  <li>N. Ratha and R. Bolle (Eds.) Automatic Fingerprint Recognition Systems, ISBN:  0387955933, Springer ,  October 2003.</li>
+  <li>R. Bolle, J. Connell, S. Pankanti, N. Ratha and A. Senior, Guide to Biometrics, ISBN: 0387400893, Springer, October 2003.</li>
+  <li>N. Ratha and V. Govindaraju, “Advances in Biometrics”, ISBN: 978-1846289200, Springer, October,  2007.</li>
+  <li> R. Singh, M. Vatsa, N. Ratha and V. Patel (Eds.) Domain Adaptation for Visual Understanding, Springer 2020 </li>
+</ol> 
+<H1> Conference proceedings </h1>
+<ol>
+<li> Anil K. Jain and Nalini K. Ratha (Eds.) SPIE Volume 5404.  Proc. of Biometrics Technology for Human Identification, ISBN: 0-8194-5327-7, 2004. </li>
+<li> Anil K. Jain and Nalini K. Ratha (Eds.) SPIE Volume 5779.  Proc. of Biometrics Technology for Human Identification, ISBN: 0-8194-5764-7, 2005. </li>
+<li> T. Kanade, A. K. Jain and N. K. Ratha, Proc. Of AVBPA 2005. July 2005 </li>
+<li> IEEE CVPR Workshop on Biometrics, June 2006 (with Prof. Bir Bhanu)
+<li> IEEE CVPR Workshop on Biometrics, June 2007 (With Prof. Bir Bhanu) </li>
+<li> IEEE CVPR Workshop on Biometrics, June 2007 (With Prof. Bir Bhanu and Prof. Venu Govindaraju) </li>
+<li> IEEE Biometrics Theory Applications and Systems (BTAS), Sept. 2007 (with K. Bowyer, V. Govindaraju and P. Flynn) </li>
+<li> IEEE Biometrics Theory Applications and Systems (BTAS), Sept. 2008 (with K. Bowyer, V. Govindaraju and M. Nixon) </li>
+<li> IEEE Biometrics Theory Applications and Systems (BTAS), Sept. 2016 </li>
+</ol>
+<H1> Associate Editor/Special Issues Editor </h1>
+<ol>
+<li> Associate Editor Pattern Recognition Journal
+<li> Associate Editor, IEEE Trans. on Image Processing
+<li> Associate Editor, IEEE Trans. on Pattern Analysis and Machine Intelligence
+<li> Associate Editor, IEEE Trans. On System Man and Cybernetics, Part B.
+<li> Spl. Issue on Biometrics, IEEE Trans. On System Man and Cybernetics, Part B.
+<li> Spl. Issue on Human Detection and Recognition”, IEEE Trans. on Information Forensics and Security (T-IFS)
+<li> Spl. Issue on Domain Adaptation in Visual Understanding, Pattern Recognition Journal (in progress)
+<li> Spl. Issue on Blockchain, IEEE Computer (July 2020)
+</ol>
+<H1> Journal Papers </h1>
+<ol>
+<li> M Singh, R Singh, M Vatsa, N K Ratha, R Chellappa , Recognizing disguised faces in the wild, IEEE Transactions on Biometrics, Behavior, and Identity Science 1(2), 97--108, IEEE, 2019 </li>
+<li> G Goswami, A Agarwal, N Ratha, R Singh, M Vatsa, Detecting and mitigating adversarial perturbations for robust face recognition, International Journal of Computer Vision 127 (6-7), 719-742, 2019 </li>
+<li> Patel, V.M.; Ratha, N.K.; Chellappa, R., "Cancelable Biometrics: A review," in Signal Processing Magazine, IEEE , vol.32, no.5, pp.54-65, Sept. 2015 </li>
+<li> H. S. Bhatt, R. Singh, M. Vatsa, N. K. Ratha, “Improving Cross-Resolution Face Matching Using Ensemble-Based Co-Transfer Learning”, IEEE Trans. On Image Processing, Vol. 23, No. 12, pp. 5654—5668, Dec. 2014. </li>
+<li> N. K. Ratha, J. H. Connell and S. Pankanti, "Big Data approach to biometric-based identity analytics," in IBM Journal of Research and Development, vol. 59, no. 2/3, pp. 4:1-4:11, March-May 2015. </li>
+<li> Pankanti, S.; Brown, L.; Connell, J.; Datta, A.; Fan, Q.; Feris, R.; Haas, N.; Li, Y.; Ratha, N.; Trinh, H.; , "Practical computer vision: Example techniques and challenges," IBM Journal of Research and Development , vol.55, no.5, pp.3:1-3:12, Sept.-Oct. 2011 </li>
+<li> Pillai, J.K.; Patel, V.M.; Chellappa, R.; Ratha, N.K.; , "Secure and Robust Iris Recognition Using Random Projections and Sparse Representations," Pattern Analysis and Machine Intelligence, IEEE Transactions on , vol.33, no.9, pp.1877-1893, Sept. 2011 </li>
+<li> N. K. Ratha, S. Chikkerur, J. H. Connell and R. M. Bolle, “Generating cancelable fingerprint templates”, IEEE Trans. on PAMI, Vol. 29, No. 4, pp. 561—572, April 2007. </li>
+<li> C. Dorai, N. K. Ratha and R. M. Bolle, “Dynamic Behavior Analysis in Compressed Fingerprint Videos”, IEEE Trans. CSVT, Vol. 14, No. 1, pp. 58—74, Jan 2004. </li>
+<li> R M. Bolle, N. K. Ratha and S. Pankanti, “Error analysis of pattern recognition systems––the subsets bootstrap, Computer Vision and Image Understanding, Vol. 93, No. 1, pp. 1-33, Jan. 2004. </li>
+<li> N. K. Ratha, J. H. Connell and R. M. Bolle, “Biometrics break-ins and band aids”, Pattern Recognition Letters, Vol. 24, No. 13, pp. 2105-2113, Sept. 2003. </li>
+<li> R. M. Bolle, J. H. Connell and N. K. Ratha, “Biometric Perils and Patches”, Pattern Recognition, Vol. 35, No. 12, pp. 2727-2738, Dec. 2002. </li>
+<li> N. K. Ratha, J. H. Connell and R. M. Bolle, “Enhancing security and privacy in biometrics-based authentication systems”, IBM Systems Journal, Vol. 40, No. 3, pp. 614-634, Sep. 2001. </li>
+<li> N. K. Ratha and A.K. Jain, “Computer Vision Algorithms on Reconfigurable Logic Arrays”, IEEE Trans. Parallel and Distributed Systems, Vol. 10, No. 1, pp. 29-43, 1999. </li>
+<li> A.K. Jain, N. K.  Ratha and S. Lakshmanan, “Object Detection Using Gabor Filters”, Pattern Recognition, Vol. 30, No. 2, pp. 295-309, 1997. </li>
+<li> N. K. Ratha, S. Chen, K. Karu and A.K. Jain, “A Real-time Matching System for Large Fingerprint Databases”, IEEE Trans. Pattern Analysis and Machine Intelligence, Vol. 18, 8, pp. 799-813, 1996.</li>
+<li> N. K. Ratha, S. Chen and A.K. Jain, “Adaptive Flow Orientation Based Feature Extraction in Fingerprint Images”, Pattern Recognition, Vol. 28, pp. 1657-1672, November 1995. </li>
+</ol>
+<H1> Patents </h1>
+<ol>
+	<p>Co-inventor in the following patents:<p>
+<li> EP 1825418: Fingerprint Biometric Machine Representations Based On Triangles </li>
+<li>	Germany 112010003796: System And Method For Generating And Employing Short Length Iris Codes </li>
+<li>	Germany 602005045732.1: Fingerprint Biometric Machine Representations Based On Triangles </li>
+<li>	Japan 3254645:  System And Method For Data Hiding In Compressed Fingerprint Images </li>
+<li>	Japan 4678883: Method, System, And Program Product For Transforming A Biometric Image </li>
+<li>	Japan 5039103: Fingerprint Representation Using Localized Texture Feature </li>
+<li>	Japan 5506785: Fingerprint Represenation Using Gradient Histograms </li>
+<li>	Japan: 5596155: Fingerprint Represenation Using Gradient Histograms </li>
+<li>	Korea 323603: System And Method For Distortion Control In Live-Scan Inkless Fingerprint Images </li>
+<li>	Singapore 71122:  System And Method For Distortion Control In Live-Scan Inkless Fingerprint Images </li>
+<li>	Taiwan I236634: System And Method For Liveness Authentication Using An Augmented Challenge/Response Scheme </li>
+<li>	Taiwan I469059:  Method, Apparatus And Computer Program Product Implementing Anonymous Biometric Matching </li>
+<li>	Taiwan NI-144770: System And Method For Distortion Control In Live-Scan Inkless Fingerprint Images </li>
+<li>	UK 1825418: System And Method For Generating And Employing Short Length Iris Codes </li>
+<li>	UK 2486129: System And Method For Generating And Employing Short Length Iris Codes </li>
+<li>	US 6,301,368 System and method for data hiding in compressed fingerprint images </li>
+<li>	US 6,597,802 System and method for generating a rolled surface representation from a set of partial images </li>
+<li>	US 6,819,219 Method for biometric-based authentication in wireless communication for access control </li>
+<li>	US 6,836,554 System and method for distorting a biometric for transactions with enhanced security and privacy </li>
+<li>	US 6,851,051: System and method for liveness authentication using an augmented challenge/response scheme </li>
+<li>	US 6,941,001: To a combined fingerprint acquisition and control device  </li>
+<li>	US 6301368: System And Method For Distortion Control In Live-Scan Inkless Fingerprint Images </li>
+<li>	US 6597802: System And Method For Distortion Control In Live-Scan Inkless Fingerprint Images </li>
+<li>	US 6819219:  System And Method For Generating A Rolled Surface Representation From A Set Of Partial Images </li>
+<li>	US 6836554: Method For Biometric-Based Authentication In Wireless Communication For Access Control </li>
+<li>	US 6851051: System And Method For Distorting A Biometric For Transactions With Enhanced Security And Privacy </li>
+<li>	US 6941001: Method For Biometric-Based Authentication In Wireless Communication For Access Control </li>
+<li>	US 7,054,470: System and method for distortion characterization in fingerprint and palm-print image sequences and using this distortion as a behavioral biometrics </li>
+<li>	US 7,072,523: System and method for fingerprint image enhancement using partitioned least-squared filters </li>
+<li>	US 7,120,607: Business system and method using a distorted biometrics </li>
+<li>	US 7,130,452: System and method for multi-party validation, authentication and/or authorization via biometrics </li>
+<li>	US 7,508, 960: Projection of light patterns for liveness verification of biometrics </li>
+<li>	US 7,822,238: Method, system, and program product for transforming a biometric image </li>
+<li>	US 7054470: To A Combined Fingerprint Acquisition Control Device </li>
+<li>	US 7130452: System And Method For Distortion Characterization In Fingerprint And Palm-Print Image Sequences And Using This Distortion As A Behavioral Biometrics </li>
+<li>	US 7508960: System And Method For Multi-Party Validation, Authentication And/Or Authorization Via Biometrics </li>
+<li>	US 7822238: Fingerprint Biometric Machine Representations Based On Triangles </li>
+<li>	US 8,121,355: Brain shape as a biometric  </li>
+<li>	US 8,180,121: Fingerprint Representation Using Localized Texture Feature </li>
+<li>	US 8,249,314: Anonymous And Revocable Fingerprint Recognition </li>
+<li>	US 8,290,219: Registration-free transforms for cancelable iris biometrics </li>
+<li>	US 8,296,573: System and Method For Remote Self-Enrolment in Biometric Database </li>
+<li>	US 8,452,058: Method and apparatus for repeatable facial distortion </li>
+<li>	US 8,452,131: Iris recognition system and method </li>
+<li>	US 8121355: Fingerprint Biometric Machine Representations Based On Triangles </li>
+<li>	US 8180121: Brain Shape As A Biometric </li>
+<li>	US 8249314: Method For Biometric-Based Authentication In Wireless Communication For Access Control </li>
+<li>	US 8290219: Anonymous And Revocable Fingerprint Recognition </li>
+<li>	US 8296573: Registration-Free Transforms For Cancelable Iris Biometrics </li>
+<li>	US 8452058: System And Method For Remote Self-Enrollment In Biometric Databases </li>
+<li>	US 8452131:  Method And Apparatus For Repeatable Facial Distortion </li>
+<li>	US 8532344 Iris Recognition System And Method </li>
+<li>	US 8538096:  Methods And Apparatus For Generation Of Cancelable Face Template </li>
+<li>	US 8625861: Methods And Apparatus For Generation Of Cancelable Fingerprint Template </li>
+<li>	US 8908929: System And Method For Generating And Employing Short Length Iris Codes </li>
+<li>	US 9031288: Unique Cardiovascular Measurements For Human Identification </li>
+<li>	US 9311703: Method And System For Categorizing Heart Disease  </li>
+<li>	US 9443168: Object Detection Approach Using An Ensemble Strong Classifier </li>
+<li>	US 9483696:  System And Method For Generating And Employing Short Length Iris Codes </li>
+<li>	US 9514354: Facial Analysis By Synthesis And Biometric Matching </li>
+<li>	ZL 201080042229.1: System And Method For Generating And Employing Short Length Iris Codes </li>
+<li>	ZL 201310130889.0: Unique Cardiovascular Measurements For Human Identification </li>
+<li>	Zl200580039037.4: Projection Of Light Patterns For Liveness Verification Of Biometrics </li>
+<li>	ZL200980117512.3: Fingerprint Representation Using Gradient Histograms </li>
+<li>	US9514354: Facial Analysis By Synthesis And Biometric Matching, Dec 2016 </li>
+<li>	US9633261: Salting System And Method For Cancelable Iris Biometric </li>
+<li>	US9678600: Display Device Including A Display Screen With Integrated Imaging And A Method Of Using Same, June 2017 </li>
+<li>	US9758095: Smartwatch Blackbox, Sep 2017 </li>
+<li>	US9811761: System, Method, And Recording Medium For Detecting Video Face Clustering With Inherent And Weak Supervision, Nov 2017 </li>
+<li>	US9852359: System, Method, And Recording Medium For Efficient Cohesive Subgraph Identification In Entity Collections For Inlier And Outlier Detection, Dec 2017 </li>
+<li>	US9894063: Anonymizing Biometric Data For Use In A Security System, Feb 2018 </li>
+<li>	US9858388: Health Monitoring Using Parallel Cognitive Processing, Jan 2018 </li>
+<li>	US9898674: Spoof Detection For Facial Recognition, Feb 2018 </li>
+<li>	US10046601: Smartwatch blackbox </li>
+<li>	US10318796: Age progression of subject facial image </li>
+<li>	US10333917: Controlling access to electronic resources based on a user's sociometric identification document </li>
+<li>	US10431116: Orator effectiveness through real-time feedback system with automatic detection of human behavioral and emotional states of orator and audience </li>
+<li>	US10420913: Airborne anxiety detection and remediation </li>
+<li>	US10432622: Securing biometric data through template distribution </li>
+<li>	US10216995B2, System and method for generating and employing short length iris codes </li>
+<li>	US10431116B2, Orator effectiveness through real-time feedback system with automatic detection of human behavioral and emotional states of orator and audience </li>
+<li>	US10333917B2, Controlling access to electronic resources based on a user's sociometric identification document </li>
+<li>	US10255674B2, Surface reflectance reduction in images using non-specular portion replacement </li>
+<li>	US10432622B2, Securing biometric data through template distribution </li>
+<li>	US10276053B2 , Cognitive system to improve athletic performance with motivation from different training styles </li>
+<li>	US10420913B2, Airborne anxiety detection and remediation </li>
+<li>	US10243952B2, Anonymizing biometric data for use in a security system </li>
+<li>	US10318796B2, Age progression of subject facial image </li>
+<p>(Several more pending) </p>
+ </ol>
+<H1> Conference Papers </h1>
+<ol>
+<li> K Nandakumar, N Ratha, S Pankanti , Proving Multimedia Integrity using Sanitizable Signatures Recorded on Blockchain, Proceedings of the ACM Workshop on Information Hiding and Multimedia security, 2019 </li>
+<li> 	S Nagpal, M Singh, R Singh, M Vatsa, N Ratha, Deep Learning for Face Recognition: Pride or Prejudiced?, arXiv preprint arXiv:1904.01219 </li>
+<li> 	M Merler, N Ratha, RS Feris, JR Smith, Diversity in faces, arXiv preprint arXiv:1901.10436 </li>
+<li> 	K Nandakumar, N Ratha, S Pankanti, S Halevi, Towards Deep Neural Network Training on Encrypted Data, Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition Workshops, 2019 </li>
+<li> 	A Goel, A Agarwal, M Vatsa, R Singh, N Ratha, DeepRing: Protecting Deep Neural Network with Blockchain, Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition Workshops, 2019 </li>
+<li> 	V Muthukumar, T Pedapati, N Ratha, P Sattigeri, CW Wu, B Kingsbury, A Kumar, S Thomas, A Mojsilovic, K Varshney, Understanding unequal gender classification accuracy from face images, arXiv preprint arXiv:1812.00099 </li>
+<li> 	V. Kushwaha, M. Singh, R. Singh, M. Vatsa, N. Ratha, and R. Chellappa, Disguised Faces in the Wild, IEEE International Conference on Computer Vision and Pattern Recognition Workshop on Disguised Faces in the Wild, 2018 </li>
+<li> 	R. Garg, Y. Baweja, S. Ghosh, R. Singh, M. Vatsa, N. Ratha, Heterogeneity Aware Deep Embedding for Mobile Periocular Recognition, In Proceedings of IEEE International Conference on Biometrics: Theory, Applications and Systems, 2018 </li>
+<li> 	G Goswami, N Ratha, A Agarwal, R Singh, M Vatsa, “Unravelling robustness of deep learning based face recognition against adversarial attacks”, AAAI, 2018 </li>
+<li> 	K. Nandakumar, N. Ratha, S. Pankanti, S. Darnell, “Single Use Biometric Tokens for Non-repudiable Multi-party Transactions”, IEEE WIFS 2017 </li>
+<li> 	Y Cheng, N Ratha, S Pankanti, “Outlier faces detector via efficient cohesive subgraph identification”, Image Processing (ICIP), 2016 IEEE International Conference on, 1659-1663 </li>
+<li> 	TA Siddiqui, S Bharadwaj, TI Dhamecha, A Agarwal, M Vatsa, R Singh, Face anti-spoofing with multifeature videolet aggregation, Pattern recognition (ICPR), 2016 23rd international conference on, 1035-1040 </li>
+<li> 	X. Peng, N. Ratha, and S. Pankanti, Learning Face Recognition from Limited Training Data Using Deep Neural Networks, ICPR-2016, Cancun, Mexico </li>
+<li> 	G. Goswami, N. Ratha, R. Singh, and M. Vatsa, Improving Classifier Fusion Via Pool Adjacent Violators Normalization, ICPR-2016, Cancun, Mexico </li>
+<li> 	C. Sagonas, Y. Panagakis, S. Arunkumar, N. Ratha, and S. Zafeiriou,  Back to the Future: A Fully Automatic Method for Robust Age Progression, ICPR-2016, Cancun, Mexico </li>
+<li> 	T. A. Siddiqui, S. Bharadwaj, T. Dhamecha, A. Agarwal, M. Vatsa, R. Singh and N. Ratha, Face Anti-Spoofing with Multifeature Videolet Aggregation, ICPR-2016, Cancun, Mexico </li>
+<li> 	H. Aronowitz, M. Li, O. Toledo-Ronen, S. Harary, A. Geva, S. Ben-David, A. Rendel, R. Hoory, N. Ratha, S. Pankanti, and D. Nahamoo, “Multi-Modal Biometrics for Mobile Authentication”, IJCB 2014, Clearwater, Florida, Sept 2014 </li>
+<li> 	M. Li, N. Ratha, W. Qian, S. Bao and Z. Su, “Face recognition using Early Biologically Inspired Features”, BTAS 2013, Sept. 2013 </li>
+<li> 	J. Connell, N. Ratha, J. Gentile, R Bolle, “Fake Iris Detection using structured light”, ICASSP, May 2013 </li>
+<li> 	N Codella, J Connell, N Ratha, “Cardiac Anatomy as a Biometric”, ICIP, Oct. 2012 </li>
+<li> 	H. Bhat, R. Singh, M. Vatsa, N. Ratha “Matching Cross-Resolution Face Images Using Co-Transfer Learning”, ICIP, Oct. 2012 </li>
+<li> 	V Tyagi, H K Prasad, T Faruquie, L. V Subramaniam, N Ratha, “Fusing Biographical and Biometric Classifiers for Improved Person Identification”, ICPR Nov. 2012 </li>
+<li> 	V. Tyagi, N. Ratha, Biometrics score fusion through discriminative training, IEEE CVPR Workshop on Biometrics, 2011 </li>
+<li> 	J. Basak, K. Kate, V. Tyagi, N. Ratha, QPLC: A novel multimodal biometric score fusion method, IEEE CVPR Workshop on Biometrics, 2010 </li>
+<li> 	V. Ramakrishnan, N. Ratha, Redundancy and diversity measure inspired biometrics fusion, IEEE CVPR Workshop on Biometrics, 2010 </li>
+<li> 	J. Basak, K. Kate, V. Tyagi, N. Ratha, A Gradient Descent Approach for Multi-modal Biometric Identification. ICPR 2010 </li>
+<li> 	J. K. Pillai, V. Patel, R. Chellappa, N. Ratha, Sectored Random Projections for Cancelable Iris Biometrics, IEEE ICASSP 2010 </li>
+<li> 	J.E. Gentile,   N. Ratha, J. Connell, An efficient, two-stage iris recognition system, Proc. of IEEE BTAS 2009 </li>
+<li> 	J.E. Gentile,   N. Ratha, J. Connell, SLIC: Short-Length Iris Codes, Proc. of IEEE BTAS 2009 </li>
+<li> 	G. Aggarwal, N. Ratha, J. Connell, and R. Bolle, "Physics-based Revocable Face Recognition",  ICASSP-08 Conference (Mar 08)</li>
+<li> 	G. Aggarwal, N. Ratha, R, Bolle, and R. Chellappa, “Multi-biometric Cohort Analysis for Biometric Fusion”, ICASSP-08, (Mar 08) </li>
+<li> 	J. Zuo, N. Ratha, and J. Connell, "A New Approach for Iris Segmentation", CVPR-08 Biometrics Workshop (Jun 08) </li>
+<li> 	S. Chikkerur, J. Connell, and N. Ratha, "Generating Registration-free Cancelable Fingerprint Templates", BTAS-08 Conference (Sept 08) </li>
+<li> 	J. Zuo, N. Ratha, and J. Connell, "Median Filter Based Iris Encoding Technique", BTAS-08 Conference (Sept 08) </li>
+<li> 	S. Biswas, N. Ratha, G. Aggarwal, and J. Connell, "Exploring Ridge Curvature for Fingerprint Indexing",  BTAS-08 Conference (Sept 08) </li>
+<li> 	G. Aggarwal, N. Ratha, T-Y. Jea and R. Bolle, "Gradient-based Textural Characterization of Fingerprints",  BTAS 08 </li>
+<li> 	J. Zuo, N. Ratha, and J. Connell,  "Cancelable Iris Biometric", ICPR-08 Conference (Dec 08) </li>
+<li> 	A. Thomas, N. Ratha, J. Connell, and R. Bolle, "Comparative Analysis of Registration Based and Registration Free Methods for Cancelable Fingerprint Biometrics", ICPR-08 Conference (Dec 08) </li>
+<li> 	F. Farooq, N. Ratha, T-Y. Jea, and R,Bolle “Security and Accuracy Trade-off in Anonymous Fingerprint Recognition”, Proc. Of IEEE Conf. on Biometrics Theory Applications and Systems (BTAS 07), 2007 </li>
+<li> 	F. Farooq, R. M. Bolle, T-Y. Jea and N. Ratha “Anonymous and Revocable Fingerprint Recognition, Proc. of CVPR Workshop on Biometrics, Minneapolis, 2007 </li>
+<li> 	N. K. Ratha, J. H. Connell, R. M. Bolle and S. Chikkerur, “Cancelable biometrics: a case study in fingerprints”, Proc. of International Conf. on Pattern Recognition (ICPR 2006), Hong Kong, August, 2006 </li>
+<li> 	S. Chikkerur, S. Pankanti, A. Jea, N. K. Ratha and R. M. Bolle, “Fingerprint representation using localized texture features”, Proc. of International Conf. on Pattern Recognition (ICPR 2006), Hong Kong, August, 2006 </li>
+<li> 	G. Aggarwal, N. K. Ratha and R. M. Bolle, “Biometric Verification: Looking beyond similarity scores”, Proc. of CVPR Workshop on Biometrics, New York, 2006 </li>
+<li> 	S.  Chikkerur, S. Pankanti, Nalini Ratha, R. Bolle and V. Govindaraju, "Novel Approaches for Minutiae Verification in Fingerprint Images",IEEE Workshop on Applications of Computer Vision 2005, Colardo, USA </li>
+<li> 	Sharat Chikkerur, Nalini Ratha, "Impact of Singular Point Detection on Fingerprint Matching Performance", accepted ,IEEE AUTOID 2005, Buffalo, NY, pp. 207—212 </li>
+<li> 	R. Bolle, J. H. Connell, S. Pankanti, N. K. Ratha and A. W. Senior, “The Relation between the ROC Curve and the CMC”, IEEE AutoID 2005, Buffalo, NY, pp. 15—20 </li>
+<li> 	R. Bolle, Sp. Pankanti and N. Ratha, “Large Scale Fingerprint Identification”, Working Together: R&D Partnerships in Homeland Security, April 27-28, Boston, Massachussets </li>
+<li> 	R. Bolle, N. Ratha and S. Pankanti, Subset Bootstrap Methods in Biometrics Systems, The Nineteenth New England Statistics Symposium Saturday, April 23, 2005 Department of Statistics, University of Connecticut </li>
+<li> 	Nalini K. Ratha, Miguel A. Figueroa-Vilanueva, Jon H. Connell and Ruud M. Bolle, ``A secure protocol for data hiding in compressed fingerprint images’’, Prod. Of ECCV, BioAWorkshop 2004, LNCS 3087, pp. 205 – 216, May 2004 </li>
+<li> 	Ruud M. Bolle, Nalini K. Ratha and Sharath Pankanti, ``An Evaluation of Error Confidence Interval Estimation Methods’’, Proc. of  ICPR 2004, Vol. 3, Cambridge, UK, August 2004, pp. 103—106 </li>
+<li> 	Ruud M. Bolle, Sharath Pankanti, Jonathan H. Connell, and Nalini K. Ratha ``Iris Individuality: A partial iris model’’, Proc. of  ICPR 2004, Vol. 2, Cambridge, UK, August, 2004, pp. 927—930 </li>
+<li> 	Ruud M. Bolle, Nalini K. Ratha and Sharath Pankanti,``Efficacy of joint person bootstrap estimation of confidence interval’’, Proc. of Workshop on Biometrics in conjunction with ICPR 2004 called Biometric Challenges arising from theory to  practice (BCTP 2004), pp. 55-58 </li>
+<li> 	Nalini K. Ratha, Ruud M. Bolle and Sharath Pankanti, ``Large-scale biometrics identification: Challenges and solutions,’’ Invited paper at International Workshop on Biometric Technologies (BT 2004), University of Calgary, pp. 29—38 </li>
+<li> 	Ruud M. Bolle, Nalini K. Ratha and Sharath Pankanti, ``Performance Evaluation in 1 : 1 Biometric Engines,’’ Invited paper for SinoBiometrics:  To be published in Dec. 2004 </li>
+<li> 	Sharath Chikkerur, Sharath Pankanti, Nalini Ratha and Ruud Bolle ``Novel approaches for minutiae filtering in fingerprint images’’ WACV paper (to appear in Jan 2005) </li>
+<li> 	M. A. Figueroa-Villanueva, N. K. Ratha and R. M. Bolle, “A comparative performance analysis of JPEG 2000 vs. WSQ for fingerprint image compression”, in Proc. of  Audio- and Video-Based Biometric Person Authentication (AVBPA 2003), Surrey, UK, June 2003,  pp. 385-392 </li>
+<li> 	S. Noronha, C. Dorai, N. K. Ratha and R. M. Bolle, “Architecture for synchronous multiparty authentication using biometrics”, in Proc. of  Audio- and Video-Based Biometric Person Authentication (AVBPA 2003), Surrey, UK, June 2003, pp. 609-616 </li>
+<li> 	M. Osborne and N. K. Ratha, “A JC-BioAPI compliant smart card with biometrics for secure access”, in Proc. of  Audio- and Video-Based Biometric Person Authentication (AVBPA 2003), Surrey, UK, June 2003, pp. 903-910 </li>
+<li> 	J. H. Connell, N. K. Ratha, R. M. Bolle, “Fingerprint image enhancement using weak models”, Proc. of International Conference on Image Processing (ICIP), Rochester, NY, Sept. 2002, Vol. 1 , pp. I-45 -I-48 </li>
+<li> 	S. Pankanti, N. K. Ratha, R. M. Bolle, “Structure in errors: a case study in fingerprint verification ,  Proc. of  16th International Conference on Pattern Recognition (ICPR), Quebec City, Vol. 3,  Aug. 2002, pp. 440-443 </li>
+<li> 	R. M. Bolle, A. W. Senior, N. K. Ratha and S. Pankanti, “Fingerprint Minutiae: A Constructive Definition”, in Proc. of Workshop on Biometric Authentication ECCV 2002, Denmark, June 2002, pp.  58-66 </li>
+<li> 	N. Haas, N. K. Ratha and R. M. Bolle, “Pre-enhancing non-uniformly illuminated fingerprint images”,  in Proc. of IEEE on Automatic Identification Advanced Technologies (AutoID 02), Tarrytown, NY, March 2002, pp. 89-94 </li>
+<li> 	M. Y. Yao, S. Pankanti, N. Haas, N. K. Ratha and R. M. Bolle, “Quantfying quality: a case study in fingerprints”, in Proc. of IEEE on Automatic Identification Advanced Technologies (AutoID 02), Tarrytown, NY, March 2002 pp.126-131 </li>
+<li> 	R. M. Bolle, S. Pankanti and N. K. Ratha, "Confidence Interval Measurement in Performance Analysis of Biometrics systems using the Bootstrap", Proc. IEEE Workshop on Empirical Evaluation Methods in Computer Vision, Hawaii, Dec. 2001 </li>
+<li> 	R. M. Bolle, N. K. Ratha and J. H. Connell, “Automated Biometrics: Security & Privacy”, in Proc. of Workshop on PRIS, Portugal, July 2001, pp. 2-11 </li>
+<li> 	N. K. Ratha, J. H. Connell and R. M. Bolle, "An Analysis of Minutia Matching Strength", in Proc. of  Audio- and Video-Based Biometric Person Authentication (AVBPA 2001), Halmstad, Sweden, June 2001, pp. 223-228 </li>
+<li> 	N. K. Ratha, A. Senior and R. M. Bolle, "Automated Biometrics",  in Proc. of  ICAPR, 2001, Rio, Brazil, March 2001, pp. 445-454 </li>
+<li> 	N. K. Ratha, R. M.  Bolle, V. D. Pandit, V. Vaish, “Robust fingerprint authentication using local structural similarity”, Fifth IEEE Workshop on. Applications of Computer Vision (WACV), Santa Barbara, CA, Dec. 2000, pp. 29 -34 </li>
+<li> 	S. Ghosal,  R. Udupa, S. Panknti, N. K.  Ratha, “Learning partitioned least squares filters for fingerprint enhancement”, Fifth IEEE Workshop on. Applications of Computer Vision (WACV), Santa Barbara, CA, Dec. 2000, pp. 2-7 </li>
+<li> 	N. K. Ratha, J. H. Connell and R. M. Bolle, “Secure data hiding in wavelet compressed fingerprint images”, in Proc. of  ACM Multimedia Workshops 2000, Los Angeles, CA, Oct. 2000, pp.127-130 </li>
+<li> 	R. M. Bolle, S. Pankanti, N. K. Ratha, “Evaluation techniques for biometrics-based authentication systems (FRR)”,  Proc. 15th International Conference on  Pattern Recognition (ICPR),  Barcelona, Spain, Vol. 2 ,  pp. 831-837,  Sept. 2000 </li>
+<li> 	S. Ghosal, N. K. Ratha, R. Udupa, S. Pankanti, “Hierarchical partitioned least squares filter-bank for fingerprint enhancement”, Proc. 15th International Conference on  Pattern Recognition (ICPR),  Barcelona, Spain, Sept. 2000, Vol. 3 ,  pp. 334-337 </li>
+<li> 	N. K. Ratha, A. K.  Jain, and D. T.  Rover, “FPGA-based coprocessor for text string extraction”, Proc. Fifth IEEE International Workshop on Computer Architectures for Machine Perception (CAMP-2000), Padova, Italy, Sept. 2000, pp. 217 -221 </li>
+<li> 	C. Dorai, N. K. Ratha and R. M. Bolle, “Detecting dynamic behavior in compressed fingerprint videos: distortion, Proc. IEEE Conference on Computer Vision and Pattern Recognition (CVPR),  Fort Collins, CO, June 2000, Vol. 2 , pp. 320 -326 </li>
+<li> 	N. K. Ratha and R. Bolle, “Fingerprint Image Quality Estimation”, in Proc. of ACCV-2000, Taipei, Jan 2000, pp. 819-823 </li>
+<li> 	N. K. Ratha, J. H. Connell and R. M. Bolle, “A biometrics-based secure authentication system”, in Proc. of IEEE Workshop on Automatic Identification Advanced Technologies (AutoId 99), Summit, NJ, Oct. 1999, pp. 70-73 </li>
+<li> 	R. M. Bolle, N. K. Ratha and S. Pankanti, “Evaluating fingerprint authentication systems using bootstrap confidence intervals”, in Proc. of IEEE on Automatic Identification Advanced Technologies (AutoID 99), Summit, NJ,  pp. 9-13 </li>
+<li> 	R. M. Bolle, N. K. Ratha, A. Senior and S. Pankanti, “Minutia template exchange format”, in Proc. Of  IEEE on Automatic Identification Advanced Technologies (AutoID 99), Summit, NJ, pp. 74-77 </li>
+<li> 	N. K. Ratha and R. M. Bolle, “Effect of controlled image acquisition on fingerprint matching”, in Proc. of Intl. Conf. on Pattern Recognition (ICPR-98), Brisbane, Australia, Aug. 1998, pp. 1659-1661 </li>
+<li> 	N. K. Ratha, J. H. Connell and R. M. Bolle, “Image Mosaicing for rolled fingerprint construction”, in Proc. of Intl. Conf. on Pattern Recognition (ICPR-98), Brisbane, Australia, Aug. 1998, pp. 1651-1653 </li>
+<li> 	R. M. Bolle, N. K. Ratha and S. Pankanti, “Research issues in biometrics”, in Proc. of   ACCV-98, Hong Kong, Jan. 1998, pp. 2-9 </li>
+<li> 	N. K. Ratha  and A. K. Jain, “FPGA-based computing in Computer vision”, in Proc. of IEEE Symposium on Computer Architecture for Machine Perception (CAMP-97), Boston, Oct. 1997, pp. 128-137 </li>
+<li> 	N. K. Ratha  and A. K. Jain, “Multilayer Perceptron on Splash 2”, ”, in Proc. of IEEE Symposium on Computer Architecture for Machine Perception (CAMP-97), Boston, Oct. 1997, pp. 138-142 </li>
+<li> 	R. S. Germain, R. Bolle, A. Califano, S. Colville, S. Pankanti, N. Ratha, “Issues in Large Scale Automatic Biometric Identification”, IEEE Workshop  on Automatic Identification Advanced Technologies, Stony Brook, Nov. 1997, pp. 43-46 </li>
+<li> 	N. K. Ratha, A. K. Jain and D.T Rover, “FPGA- based high performance page layout segmentation” in Proc. of IEEE Great Lakes Symposium on VLSI, Ames, Iowa, Mar. 1996, pp. 29-34 </li>
+<li> 	N. K Ratha, A.K. Jain “High performance custom computing for image segmentation”, in Proc. of IEEE Conf. on High performance Computing (HiPC-95), Dec. 1995, New Delhi, pp. 67-72 </li>
+<li> 	N. K Ratha, A. K. Jain and D.T. Rover, “An FPGA -based point pattern matching coprocessor with application to fingerprint matching”, in Proc.of IEEE Symposium on Computer Architecture for Machine Perception (CAMP-95), Como, Italy, pp. 394-401  </li>
+<li> 	N. K Ratha, A. K. Jain and  M. J. Chung, “Clustering using coarse-grained parallel genetic Algorithm: a Preliminary study”, in Proc. of IEEE Symposium on Computer Architecture for Machine Perception (CAMP-95), Como, Italy, pp. 394-401 </li>
+<li> 	N. K. Ratha, T. Acar, M. Gokman and A. K Jain , “A distributed edge detection and surface reconstruction  algorithm  based on weak membrane  modeling”, in Proc. of IEEE Symposium on Computer Architecture for Machine Perception (CAMP-95), Como, Italy, pp. 149-154.  </li>
+<li> 	N. K. Ratha, A. K. Jain and D.T. Rover, “Convolution on Splash 2” in proc. of IEEE Symposium on FPGAs for Custom computing Machines (FCCM-95), Napa, CA, pp.204-213. </li>
+<li> 	N. K. Ratha, A. K. Jain and S. Lakshmanan, “Object detection in the presence of clutter  using Gabor filters,” in Proc. of SPIE, Applications of digital Image Processing XVII, Vol. 2298, pp.612-623, September, 1994. </li>
+<li> 	D. Judd, N. K. Ratha, P. K . McKinley, J. Weng and A. K Jain, “Parallel implementation of vision algorithms on workstation clusters,” in proc. of IAPR- 94, Jerusalem , pp. 317- 321, October, 1994. </li>
+<li> 	S. H. Choi, N. K. Ratha, M. J. Chung  and D. T Rover, “Signal processing application using VHDL on Splash 2 ,” in VHDL International users’ Forum ( VIUF) Fall Conference, pp. 6.11-6,18, November, 1994. </li>
 
-      
-
-      
-
-      <script>hljs.initHighlightingOnLoad();</script>
-    
-
-    
-    
-    <script type="text/x-mathjax-config;executed=true">
-        MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });
-    </script>
-    
-    <script src="./js/MathJax.js" ></script>
-    
-    <script src="./js/bib2html.js"> </script>
-
-  
-
-
-
-</body></html>
+</ol>
+</body>  
+</html>
