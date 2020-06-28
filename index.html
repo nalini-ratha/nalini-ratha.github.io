@@ -7,16 +7,34 @@
 <style>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width">
+  .content-wrapper {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 960px;
+}
   .centered-block {
   display: block;
   margin: auto;
-  max-height: 500px;
-  max-width: 500px;
+  max-height: 700px;
+  max-width: 700px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
 }
 </style>
 </head>
 <body>
-<div class="content-wrapper">
+<div class="centered-block">
 <p>
 
     <img  src="images/nalini_face.jpg" ALIGN="LEFT" alt="Nalini Ratha" width="150" height="150"/>
@@ -54,6 +72,32 @@ In 2019, he won the IEEE Biometrics Council Leadership award.
 
 </p>
 
+<div class="grid-container">
+  <div><a href="education.html">  
+<img src="images/education.jpg" alt="Education" width="300">
+</a> </div>
+  <div><a href="awards.html">  
+<img src="images/awards.jpg" alt="Awards and Recognitions" width="300">
+</a></div>
+  <div><a href="projects.html">  
+<img src="images/projects.jpg" alt="Projects" width="300">
+</a> </div>  
+  <div><a href="patents.html">  
+<img src="images/patents.jpg" alt="Patents" width="300">
+</a> </div>
+  <div><a href="professional.html">  
+<img src="images/professional.jpg" alt="Professional" width="300">
+</a> </div>
+  <div><a href="books_proceedings.html">  
+<img src="images/books.jpg" alt="Books and Proceedings" width="300">
+</a> </div>  
+  <div><a href="journal_paper.html">  
+<img src="images/journal.jpg" alt="Journal Papers" width="300">
+</a></div>
+  <div><a href="conference_papers.html">  
+<img src="images/conference.jpg" alt="Conference Papers" width="300">
+</a> </div>
+</div>
 
 <p>
 <a href="education.html">  
@@ -63,7 +107,7 @@ In 2019, he won the IEEE Biometrics Council Leadership award.
 <a href="awards.html">  
 <img src="images/awards.jpg" alt="Awards and Recognitions" width="300">
 </a> 
-
+ 
 </p>
 
 <p>
@@ -99,6 +143,6 @@ In 2019, he won the IEEE Biometrics Council Leadership award.
 </p>
 
 <p> Contact me: nalini dot ratha at gmail dot com </p>
-  </div><!-- .content-wrapper -->
+</div>
 </body>  
 </html>
